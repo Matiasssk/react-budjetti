@@ -1,0 +1,75 @@
+html {
+    font-size: 16px; 
+  }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+#verosumma {
+    margin-block: 0.5em;
+    border-bottom: 1px dashed black;
+}
+
+.kuitti {
+    background-color: antiquewhite;
+    max-width: 700px;
+    margin-inline: auto;
+    margin-block-start: 2em ;
+    padding: 2em;
+}
+
+.node-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: .8em;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.main-luku-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    border-bottom: 1px dashed black;
+}
+
+.nuoli {
+    display: flex;
+    
+    content: '';
+    display: inline-flex;
+    font-size:1.4rem;
+    width: 1.6em;
+    height: 1.6em;     
+    background-image: url('../images/arrow_right.svg');
+    background-size: contain;
+    background-repeat: none;
+}
+
+.active {
+    display: flex;
+    
+    content: '';
+    display: inline-flex;
+    font-size:1.4rem;
+    width: 1.6em;
+    height: 1.6em;     
+    background-image: url('../images/arrow_down.svg');
+    background-size: contain;
+    background-repeat: none;
+}
+
+.osasto-menot {
+    outline: 1px solid black;
+    width: 100%;
+    color: blue;
+}
+
+
+

@@ -1,0 +1,78 @@
+html {
+    font-size: 16px; 
+  }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.palaute-wrapper {
+    max-width: 800px;
+    min-height:800px;
+    margin-block-start: 3em;
+    margin-inline: auto;
+    background-color: white;
+    opacity: 0.8;
+    padding: 2em 4em;
+    color: #333333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}
+
+.palaute-wrapper-teksti {
+    max-width: 80%;
+    margin-inline: auto;
+    color: black;
+    color: #333333;
+    line-height: 1.6
+    
+}
+
+.palaute-wrapper-teksti > h2 {
+    
+    
+}
+
+
+form {
+    margin-block-start: 3em;
+    max-width: 80%;
+    margin-inline: auto;
+}
+
+
+.palautelaatikko {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+}  
+
+.palautelaatikko > div {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    border-radius: 3px;
+    border: 1px solid black;
+   box-shadow: none;
+}
+
+.btn {
+    all:unset;
+    margin-top: 1em;
+    padding: 0.2em 0.6em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #006475;
+    opacity: 1;
+    color: white;
+    border:  1px solid rgba(0, 0, 0, 0.1);
+    letter-spacing: -0.4px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 0.2em;
+}
