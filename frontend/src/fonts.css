@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("./assets/DepartureMono-Regular.otf") format("woff2"),
+         url("./assets/DepartureMono-Regular.woff") format("woff"),
+         url("./assets/DepartureMono-Regular.woff2") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }

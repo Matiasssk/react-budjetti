@@ -9,9 +9,10 @@ html {
 }
 
 .palaute-wrapper {
+    flex: 1;
     max-width: 800px;
     min-height:800px;
-    margin-block-start: 3em;
+    margin-block: 3em;
     margin-inline: auto;
     background-color: white;
     opacity: 0.8;

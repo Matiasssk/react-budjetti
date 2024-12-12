@@ -9,8 +9,11 @@ const Feedback = () => {
       
     
       <h2>Anna palautetta</h2> 
-      <div>Voit lähettää palautetta sivuistamme. Palautetta voi antaa sivujen toimivuudesta,
-        saavutettavuudesta, sisällöstä tai muusta.
+      <div>Voit lähettää palautetta sivuista. Palautetta voi antaa sivujen toimivuudesta,
+        saavutettavuudesta, sisällöstä tai muusta. Tai jos haluat palkata yritykseesi
+        aloittelevan web-ohjelmoijan, joka on kiinnostunut datan visualisoinnista ja erityisesti
+        yhteiskunnallisista aiheista niin ota hetimiten yhteyttä. Etenkin jos satut etsimään VMlle tai valtiolle
+        työntekijää, niin olen valmis viipettä tulemaan töihin oppimaan miten softapuolen hoidatte!
       </div>
     </div>
 

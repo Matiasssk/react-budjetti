@@ -1,0 +1,134 @@
+html {
+    font-size: 16px; 
+  }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.kuitti-sivu {
+    
+    max-width: 700px;
+    padding: 2em 3em 16em 3em;
+    margin-inline: auto;
+    margin-block: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+}
+
+#verosumma {
+    margin-block: 1.5em;
+    font-size: 1.3rem;
+    letter-spacing: -0.5px;
+}
+
+.kuitti {
+    font-family: "MyCustomFont", sans-serif;
+    background-image: url('../images/paper.jpg');
+    max-width: 700px;
+    margin-inline: auto;
+    margin-block-start: 2em ;
+    
+   
+    border-radius: 0.4em;
+}
+.glass-kuitti {
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 0.4em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.1px);
+    -webkit-backdrop-filter: blur(0.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.node-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: .8em;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.main-luku-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    border-bottom: 1px dashed black;
+}
+
+.nuoli {
+    display: flex;
+    
+    content: '';
+    display: inline-flex;
+    font-size:1.4rem;
+    width: 1.6em;
+    height: 1.6em;     
+    background-image: url('../images/arrow_right.svg');
+    background-size: contain;
+    background-repeat: none;
+}
+
+.active {
+    display: flex;
+    
+    content: '';
+    display: inline-flex;
+    font-size:1.4rem;
+    width: 1.6em;
+    height: 1.6em;     
+    background-image: url('../images/arrow_down.svg');
+    background-size: contain;
+    background-repeat: none;
+    opacity: 0.2;
+}
+
+.osasto-menot {
+    font-size: 0.8rem;
+    padding-inline-start: 1.5em;
+    width: 100%;
+    color: rgb(75, 73, 73);
+}
+
+.osasto-menot > .nodeb {
+    text-transform: capitalize;
+    padding-block: 0.2em;
+}
+.nodea {
+    text-transform: capitalize;
+}
+
+.kuitti-teksti {
+    
+    width: 50%;
+    margin-block-end: 1.5em;
+}
+.kuitti-teksti > * {
+    margin-block: 0.3em;
+}
+
+.ikoni {
+    display: inline;
+}
+
+.ikoni > img {
+    opacity: 0.6;
+}
+
+.teksti-flex {
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+}
+
+.kiitos {
+    text-align: center;
+}
+

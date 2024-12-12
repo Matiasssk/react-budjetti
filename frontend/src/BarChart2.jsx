@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 import { useEffect, useRef } from "react";
-
+import './index.css'
 const Barchart2 = () => {
     const ref = useRef();
   
@@ -515,9 +515,7 @@ const Barchart2 = () => {
     }, []);
   
     return       <div>
-        <div className="main-header">
-        <h1>valtion budjetti 2025</h1>
-      </div>
+       
       
       <div className="wrapper">
         <div className="main clearfix">

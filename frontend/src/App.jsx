@@ -5,6 +5,11 @@ import BarChart2 from './BarChart2';
 import Feedback from './Feedback';
 import Footer from './Footer';
 import Verokuitti from './Verokuitti';
+import Header from './Header';
+import Etusivu from './Etusivu';
+
+
+
 
 
 const App = () => {
@@ -12,12 +17,16 @@ const App = () => {
        
             <>
                 <Router>
+        <Header />
+       
       <Routes>
-        <Route path="/" element={<BarChart2 />} />
+       
+        <Route path="/" element={<Etusivu />} />
+        <Route path="/budjetti" element={<BarChart2 />} />
         <Route path="/palaute" element={<Feedback />} />
         <Route path="/verokuitti" element={<Verokuitti />} />
       </Routes>
-      <Footer />
+        <Footer />
     </Router>
             </>
            

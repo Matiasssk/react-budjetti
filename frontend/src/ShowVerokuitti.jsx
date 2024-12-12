@@ -3,12 +3,18 @@ import * as d3 from "d3";
 
 
 import { useEffect, useRef, useState } from "react";
-import './kuitti.css';
+import './showVerokuitti.css';
+import './fonts.css';
 
+function formatValue(value) {
+    
+    return value.toLocaleString("fi-FI", { minimumFractionDigits: 1, maximumFractionDigits: 2 });
+  }
 
 const ShowVerokuitti = ({ summa }) => {
     const [vero, setVero] = useState('');
     //const [openedNodes, setOpenedNodes] = useState([]); 
+    const itemsRef = useRef([])
     const nuoliClicked = useRef(false);
     const chartRef = useRef(null); // Ref käytetään D3:n hallitsemaan osaan
 
@@ -30,8 +36,9 @@ const ShowVerokuitti = ({ summa }) => {
         } else {
             tax = 48943.68 + (annualIncome - 150000) * 0.4425;
         }
-
-        setVero(`Verosi: €${tax.toFixed(2)}`);
+        const formatoitu = formatValue(tax)
+        console.log(formatoitu)
+        setVero(`Verosi yhteensä: ${formatoitu}€ / vuosi`);
         return tax;
     };
     
@@ -79,70 +86,63 @@ const ShowVerokuitti = ({ summa }) => {
         
        
             .append('div')
-            .attr('class', 'nodeb')
+            .attr('class', 'nodea')
             .text(d => {
                 const prosentti = (d.value / totalValue) * 100;
                 const euroSumma = (prosentti / 100) * taxValue;
                 let nimi = d.data.name.split(' ');
                 nimi = nimi.filter(e => e !== 'HALLINNONALA');
-                return `${nimi.join(' ')}: €${euroSumma.toFixed(2)}`;
+                nimi = nimi.join(' ')
+                if (nimi.toLowerCase().slice(-1) === "n") {
+                  
+                    nimi = nimi.slice(0, -1);
+                } 
+                const formatoitu = formatValue(euroSumma)
+                return `${nimi.toLowerCase()}: ${formatoitu}€`;
             });
 
             mainLukuWrapper
             .append('div')
             .attr('class', 'nuoli')
+            .attr("id", (d, i) => `${i}`)
             .attr('width', 24)
             .attr('height', 24)
-            //.html(`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.29 7.29L12.59 3l4.3 4.29-1.42 1.42L13 6.83V18h-2V6.83L8.29 8.71z"/></svg>`)
-            /*.each(function (d) {
-                const root = createRoot(this); // Luo root jokaiselle diville
-                root.render(<ArrowRightIcon />); // Renderöi Material-UI-ikoni Reactilla
-              })
-                */
+            
               .on("click", (event, d) => {
                 // Vaihdetaan luokan tila
-                //nuoliClicked.current = !nuoliClicked.current;
-                if (nuoliClicked.current) {
-                    d3.select(event.currentTarget) // Valitsee klikattavan elementin
-                    .classed('active', false);
+                const prosentti = (d.value / totalValue) * 100;
+                const euroSumma = (prosentti / 100) * taxValue;
+                const id = event.currentTarget.id;
+                
+                // Jos tämä nuoli on jo auki, sulje se
+                if (itemsRef.current[id]) {
+                    const tila = true
+                    itemsRef.current[id] = false;
+                    d3.select(event.currentTarget).classed('active', false);
+                    update(d, taxValue, event, tila, euroSumma);
                 } else {
-                    d3.select(event.currentTarget) // Valitsee klikattavan elementin
-                    .classed('active', true);
+                    // Jos ei ole auki, avaa se
+                    const tila = false
+                    itemsRef.current[id] = true;
+                    d3.select(event.currentTarget).classed('active', true);
+                    update(d, taxValue, event, tila, euroSumma);
                 }
-                // Lisätään/poistetaan 'active' luokka elementistä
-                console.log()
-                d3.select(this)
-                  .classed('active', true);
-              
-                // Kutsutaan update-funktiota
-                update(d, taxValue, event);
               });
     }
 
-    function update(node, taxValue, event) {
-        if (!node.data.children || node.__transition__) return;
+    function update(node, taxValue, event, tila, euroSumma) {
+        //if (!node.data.children || node.__transition__) return;
        
-        if (nuoliClicked.current) {
-            // Poistetaan elementit, jos nuoli on jo klikattu
-            console.log('Poistetaan elementit');
-            console.log('täällä', event.currentTarget)
-           
-
-            d3.selectAll('.osasto-menot').remove(); // Poistaa nykyiset elementit
-            nuoliClicked.current = false;
-            return // Asetetaan tila takaisin falseksi
-        } else {
-            // Lisätään elementit ensimmäisellä klikkauksella
-           
-
-            console.log('Lisätään elementit');
-            nuoliClicked.current = true; 
-        }
-        console.log('event', event.currentTarget)
+        
+        console.log('event', node)
         
         const targetElement = event.currentTarget;
         const nodeWrapperElement = targetElement.closest('.node-wrapper'); // Valitaan oikea elementti
        console.log('nodewrapper', nodeWrapperElement)
+       if (tila) {
+            d3.select(nodeWrapperElement).selectAll('.osasto-menot').remove()
+            return
+       }
         //const container = d3.select(chartRef.current).select('.node-wrapper');
         const container = d3.select(nodeWrapperElement);
         const wrapper = container
@@ -166,18 +166,36 @@ const ShowVerokuitti = ({ summa }) => {
             .attr('class', 'nodeb')
             .text(d => {
                 const prosentti = (d.value / node.value) * 100;
-                const euroSumma = (prosentti / 100) * taxValue;
-                return `${d.data.name}: €${euroSumma.toFixed(2)}`;
+                const osastoSumma = (prosentti / 100) * euroSumma;
+                const formatoitu = formatValue(osastoSumma)
+                return `${d.data.name.toLowerCase()}: ${formatoitu}€`;
             });
 
         enterNodes.merge(nodes);
     }
 
     return (
-        <div className="kuitti">
+        <div className="kuitti-sivu">
+            <div className="kuitti">
+                <div className="glass-kuitti">
+                <div className="teksti-flex">
+                <div className="ikoni">
+                <img src="/images/iconi.png" alt="leijona-logo" width="150" height="150" />
+                </div>
+                
+            <div className="kuitti-teksti">
+                <h3>Suomen Valtio</h3>
+                <p>Snellmaninkatu 1A, Helsinki</p>
+                <p>Puh. 09 16001</p>
+               <p>Y-tunnus: 0245440-1</p></div>
+               </div>
             <div ref={chartRef} id="chart"></div>
             <div id="verosumma">{vero}</div>
+            <div className="kiitos">Kiitos Käynnistä! Tervetuloa uudelleen!</div>
+            </div>
         </div>
+        </div>
+        
     );
 };
 

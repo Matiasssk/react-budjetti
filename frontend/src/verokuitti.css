@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.kuitti-sivu-koko {
+    margin-block-start: 3em;
+    height: 100vh;
+}
+
+.kuitti-form {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    margin: 0 auto;
+    gap: 0.5em;
+   
+}
+
+.ohje {
+    width: 26em;
+    margin: 4em auto;
+    padding-inline: 1em;
+    text-align: center;
+    letter-spacing: -0.4px;
+    font-size: 1.1rem;
+    color: #555555;
+}
+
+.kuitti-form-wrapper {
+    
+    width: 26em;
+    margin: 4em auto;
+    padding: 2em 4em;
+    border-radius: 0.5em;
+  
+background: #b5d8cc;
+box-shadow:  3px 3px 7px #9ab8ad,
+             -3px -3px 7px #d0f8eb;
+   
+    
+}
+
+.kuitti-btn {
+    all: unset;
+    background-color: #1a7483;
+    color: white;
+    padding: 0.5em 1em;
+    text-align: center;
+    border-radius: 0.2em;
+    margin-block-start: 0.5em;
+}
+
+.kuitti-form > input {
+    border: none;
+    padding-block: 0.2em;
+}
+
+.kuitti-form > label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.main-kuitti-card {
+    
+    width: 40em;
+    margin: 0 auto;
+    padding-block: 1em 6em;
+    background-color: white;
+    border-radius: 0.5em;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+    
+    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+}
