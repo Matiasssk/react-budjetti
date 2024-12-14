@@ -1,8 +1,8 @@
 import axios from "axios";
 
 //const baseUrl = "http://192.168.0.109:3001/api/palaute";
-//const baseUrl = "/api/palaute";
-const baseUrl = "https://tutkibudjettia2025.fi/api/palaute";
+const baseUrl = "/api/palaute";
+//const baseUrl = "https://tutkibudjettia2025.fi/api/palaute";
 
 const addFeedback = (newFeedback) => {
   const request = axios.post(baseUrl, newFeedback);

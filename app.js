@@ -1,6 +1,6 @@
 require("dotenv").config();
 const path = require("path");
-
+const sequelize = require("./db");
 const express = require("express");
 const cors = require("cors");
 const loginRouter = require("./controllers/login");
@@ -11,6 +11,7 @@ const corsOptions = {
 };
 const app = express();
 const feedbackRouter = require("./routes/feedbackRouter");
+
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.static("dist"));

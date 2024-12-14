@@ -1,3 +1,4 @@
+/*
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const loginRouter = require("express").Router();
@@ -25,6 +26,45 @@ loginRouter.post("/", async (request, response) => {
     expiresIn: 60 * 60,
   });
 
+  response
+    .status(200)
+    .send({ token, username: user.username, name: user.name });
+});
+
+module.exports = loginRouter; 
+*/
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
+const loginRouter = require("express").Router();
+const User = require("../models/UserSQL"); // Tuodaan User-malli
+
+loginRouter.post("/", async (request, response) => {
+  const { username, password } = request.body;
+
+  // Etsi käyttäjä SQL-tietokannasta
+  const user = await User.findOne({ where: { username } });
+
+  // Tarkista, löytyykö käyttäjä ja onko salasana oikea
+  const passwordCorrect =
+    user === null ? false : await bcrypt.compare(password, user.salasana);
+
+  if (!(user && passwordCorrect)) {
+    return response.status(401).json({
+      error: "invalid username or password",
+    });
+  }
+
+  // Luo JWT-token
+  const userForToken = {
+    username: user.username,
+    id: user.id,
+  };
+
+  const token = jwt.sign(userForToken, process.env.SECRET, {
+    expiresIn: 60 * 60, // Tokenin voimassaoloaika (1 tunti)
+  });
+
+  // Lähetetään käyttäjätiedot ja token takaisin
   response
     .status(200)
     .send({ token, username: user.username, name: user.name });
