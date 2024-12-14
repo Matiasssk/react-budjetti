@@ -9,6 +9,8 @@ const CreateUser = () => {
 
   // Käsittelee lomakkeen lähetyksen
   const handleSubmit = async (e) => {
+    console.log(username);
+    console.log(password);
     e.preventDefault();
     try {
       // Lähetetään käyttäjän tiedot backendille
@@ -18,6 +20,8 @@ const CreateUser = () => {
       });
 
       // Jos käyttäjä luotiin onnistuneesti, näytetään viesti
+      console.log("u", username);
+      console.log("p", password);
       setMessage(response.data.message);
       setUsername("");
       setPassword("");

@@ -14,6 +14,7 @@ const Login = () => {
     console.log(username, password);
 
     try {
+      console.log(username, password);
       const user = await loginService.login({
         username,
         password,
