@@ -46,7 +46,7 @@ const CreateUser = () => {
           />
         </div>
         <div>
-          <label>Salasana:</label>
+          <label>Salasasna:</label>
           <input
             type="password"
             value={password}
