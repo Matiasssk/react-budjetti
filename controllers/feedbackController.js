@@ -32,13 +32,22 @@ const Feedback = require("../models/FeedbackModel");
 
 exports.addFeedback = async (req, res) => {
   const body = req.body;
+
+  // Tarkistetaan, että kaikki tarvittavat kentät ovat mukana
+  if (!body.content || !body.name) {
+    return res.status(400).json({
+      error: "Puuttuvat kentät",
+      message: "Content ja name ovat pakollisia kenttiä.",
+    });
+  }
+
   try {
     // Luodaan uusi palautteen tietue
     const newFeedback = await Feedback.create({
       content: body.content,
       name: body.name,
-      email: body.email,
-      organisaatio: body.organisaatio,
+      email: body.email || null, // Sähköposti on valinnainen, jos ei anneta, tallennetaan null
+      organisaatio: body.organisaatio || null, // Organisaatio on myös valinnainen
     });
 
     // Palautetaan luotu palautteen tiedot

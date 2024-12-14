@@ -7,7 +7,9 @@ const baseUrl = "/api/palaute";
 const addFeedback = (newFeedback) => {
   const request = axios.post(baseUrl, newFeedback);
   console.log("täällä");
-  return request.then((response) => response.data);
+  return request.then((response) => {
+    console.log("Vastaus:", response.data);
+  });
 };
 
 const getAllFeedback = () => {

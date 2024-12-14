@@ -45,10 +45,9 @@ const sequelize = require("../db"); // Tämä tuo mukaan Sequelize-yhteyden
 
 // Määritellään Feedback-malli
 const Feedback = sequelize.define(
-  "Feedback",
   {
     content: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false, // Tämä kenttä on pakollinen
     },
     name: {
