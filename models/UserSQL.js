@@ -25,12 +25,6 @@ const User = sequelize.define(
         // Hashataan salasana ennen tallentamista
         user.salasana = await bcrypt.hash(user.salasana, 10); // 10 on suola-arvo
       },
-      beforeUpdate: async (user) => {
-        // Jos salasana on muutettu, hashataan se ennen tallentamista
-        if (user.salasana) {
-          user.salasana = await bcrypt.hash(user.salasana, 10);
-        }
-      },
     },
   }
 );
