@@ -62,8 +62,17 @@ const Feedback = () => {
       <div className="palaute-wrapper-teksti">
         <h2>Anna palautetta</h2>
         <div>
-          Voit lähettää palautetta sivuista. Palautetta voi antaa sivujen
-          toimivuudesta, saavutettavuudesta, sisällöstä tai muusta.
+          <p>
+            Voit lähettää palautetta sivuista. Palautetta voi antaa sivujen
+            toimivuudesta, saavutettavuudesta, sisällöstä tai muusta.
+          </p>
+          <p>
+            Tai jos haluat palkata yritykseesi aloittelevan web-ohjelmoijan,
+            joka on kiinnostunut datan visualisoinnista ja erityisesti
+            yhteiskunnallisista aiheista niin ota hetimiten yhteyttä. Etenkin
+            jos satut etsimään VMlle tai valtiolle työntekijää, niin olen valmis
+            viipettä tulemaan töihin oppimaan!
+          </p>
         </div>
       </div>
 

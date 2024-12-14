@@ -1,10 +1,10 @@
+require("dotenv").config();
+
 const app = require("./app");
 const mongoose = require("mongoose");
 const feedbackRouter = require("./routes/feedbackRouter");
-const url =
-  "mongodb+srv://matia:helikopteri77@cluster0.qigyc.mongodb.net/budjetti?retryWrites=true&w=majority&appName=Cluster0";
-
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
+const url = process.env.MONGODB_URI;
 
 mongoose
   .connect(url)
