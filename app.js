@@ -4,10 +4,14 @@ const path = require("path");
 const express = require("express");
 const cors = require("cors");
 const loginRouter = require("./controllers/login");
-
+const corsOptions = {
+  origin: "https://tutkibudjettia2025.fi", // Frontendin URL
+  methods: "GET,POST", // Sallitut HTTP-menetelmät
+  allowedHeaders: "Content-Type", // Sallitut otsakkeet
+};
 const app = express();
 const feedbackRouter = require("./routes/feedbackRouter");
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.static("dist"));
 app.use("/api/palaute", feedbackRouter);
