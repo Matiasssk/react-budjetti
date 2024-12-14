@@ -12,10 +12,13 @@ const CreateUser = () => {
     e.preventDefault();
     try {
       // Lähetetään käyttäjän tiedot backendille
-      const response = await axios.post("http://localhost:5000/api/users", {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        "https://tutkibudjettia2025.fi/api/login",
+        {
+          username,
+          password,
+        }
+      );
 
       // Jos käyttäjä luotiin onnistuneesti, näytetään viesti
       setMessage(response.data.message);
