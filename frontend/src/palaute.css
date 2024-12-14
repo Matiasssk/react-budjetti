@@ -1,17 +1,115 @@
 html {
-    font-size: 16px; 
-  }
+  font-size: 16px;
+}
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+#root {
+  height: 100%;
+}
+.palaute-wrapper {
+  flex: 1;
+
+  max-width: 600px;
+  min-height: 800px;
+  margin-block: 1em 8em;
+  margin-inline: auto;
+  background-color: white;
+  opacity: 0.8;
+
+  color: #333333;
 }
 
-.palaute-wrapper {
+.palaute-wrapper-teksti {
+  max-width: 80%;
+  margin-inline: auto;
+  color: black;
+  color: #333333;
+  line-height: 1.6;
+}
+.palautelaatikko {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+form {
+  margin-block-start: 3em;
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+.palautelaatikko > div {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border-radius: 3px;
+  border: 1px solid black;
+  box-shadow: none;
+  font-size: 1.2rem;
+}
+.btn-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn {
+  all: unset;
+
+  margin-top: 1em;
+  padding: 0.6em 1em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: #006475;
+  opacity: 1;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.4px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-radius: 0.2em;
+}
+
+.btn:hover {
+  background-color: rgb(4, 66, 77);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.error-message,
+.success-message {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  margin-inline: 0.5em;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2),
+    -1px -2px 4px rgba(255, 255, 255, 0.2);
+}
+.error-message {
+  background-color: #690526;
+}
+.success-message {
+  background-color: #006475;
+}
+.success-message > h3 {
+  margin-block-end: 0.5em;
+  margin-block-start: 0;
+  font-size: 1.4rem;
+}
+@media (min-width: 600px) {
+  .palaute-wrapper {
     flex: 1;
     max-width: 800px;
-    min-height:800px;
+    min-height: 800px;
     margin-block: 3em;
     margin-inline: auto;
     background-color: white;
@@ -20,60 +118,76 @@ html {
     color: #333333;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+  }
 
-}
-
-.palaute-wrapper-teksti {
+  .palaute-wrapper-teksti {
     max-width: 80%;
     margin-inline: auto;
     color: black;
     color: #333333;
-    line-height: 1.6
-    
-}
+    line-height: 1.6;
+  }
 
-.palaute-wrapper-teksti > h2 {
-    
-    
-}
+  .palaute-wrapper-teksti > h2 {
+  }
 
-
-form {
+  form {
     margin-block-start: 3em;
     max-width: 80%;
     margin-inline: auto;
-}
+  }
 
-
-.palautelaatikko {
+  .palautelaatikko {
     display: flex;
     flex-direction: column;
     gap: 0.9em;
-}  
+  }
 
-.palautelaatikko > div {
+  .palautelaatikko > div {
     display: flex;
     flex-direction: column;
-}
+  }
 
-input, textarea {
+  input,
+  textarea {
     border-radius: 3px;
     border: 1px solid black;
-   box-shadow: none;
-}
+    box-shadow: none;
+  }
 
-.btn {
-    all:unset;
+  .btn {
+    all: unset;
     margin-top: 1em;
-    padding: 0.2em 0.6em;
-    font-family: 'Poppins', sans-serif;
+    padding: 0.4em 1.4em;
+    font-family: "Poppins", sans-serif;
     font-size: 1rem;
     background-color: #006475;
     opacity: 1;
     color: white;
-    border:  1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     letter-spacing: -0.4px;
-    border-bottom:1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     border-radius: 0.2em;
+  }
+  .error-message,
+  .success-message {
+    padding: 1em 2em;
+    border-radius: 0.5em;
+
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2),
+      -1px -2px 4px rgba(255, 255, 255, 0.2);
+  }
+  .error-message {
+    background-color: #690526;
+  }
+  .success-message {
+    background-color: #006475;
+  }
+  .success-message > h3 {
+    margin: 0.5em;
+  }
 }

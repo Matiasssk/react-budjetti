@@ -1,48 +1,111 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
+:root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .kuitti-sivu-koko {
-    margin-block-start: 3em;
-    height: 100vh;
+  margin-block-start: 2em;
+  flex: 1;
 }
 
+.kuitti-form-wrapper {
+  width: 90%;
+  margin: 2em auto;
+  padding: 2em 4em;
+  border-radius: 0.5em;
+  color: white;
+  background-color: #a5cbbf;
+  box-shadow: 3px 3px 7px rgba(154, 184, 173, 0.8),
+    -3px -3px 7px rgba(208, 248, 235, 0.8);
+}
 .kuitti-form {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  margin: 0 auto;
+  gap: 0.5em;
+}
+.kuitti-form > input {
+  border: none;
+  padding-block: 0.2em;
+  font-size: 1rem;
+}
+
+.kuitti-form > label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.kuitti-btn {
+  all: unset;
+  background-color: #1a7483;
+  color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+  border-radius: 0.2em;
+  margin-block-start: 0.5em;
+}
+.ohje {
+  margin: 0em auto;
+  padding-inline: 1em;
+  text-align: center;
+  letter-spacing: -0.4px;
+  font-size: 1rem;
+  color: #555555;
+}
+.ohje-otsikko {
+  letter-spacing: -0.4px;
+  color: #555555;
+  margin-block: 0em 0.3em;
+}
+
+@media (min-width: 600px) {
+  .kuitti-sivu-koko {
+    margin-block: 3em;
+
+    flex: 1;
+  }
+
+  .kuitti-form {
     display: flex;
     flex-direction: column;
     width: 20em;
     margin: 0 auto;
     gap: 0.5em;
-   
-}
-
-.ohje {
+  }
+  .ohje-otsikko {
+    letter-spacing: -0.4px;
+    color: #555555;
+    margin-block: 2em 0.5em;
+  }
+  .ohje {
     width: 26em;
-    margin: 4em auto;
+    margin-inline: auto;
+    margin-block: 0;
     padding-inline: 1em;
     text-align: center;
     letter-spacing: -0.4px;
     font-size: 1.1rem;
     color: #555555;
-}
+  }
 
-.kuitti-form-wrapper {
-    
+  .kuitti-form-wrapper {
     width: 26em;
-    margin: 4em auto;
+    margin: 2em auto;
     padding: 2em 4em;
     border-radius: 0.5em;
-  
-background: #b5d8cc;
-box-shadow:  3px 3px 7px #9ab8ad,
-             -3px -3px 7px #d0f8eb;
-   
-    
-}
+    background-color: #a5cbbf;
+    box-shadow: 3px 3px 7px rgba(154, 184, 173, 0.8),
+      -3px -3px 7px rgba(208, 248, 235, 0.8);
+  }
 
-.kuitti-btn {
+  .kuitti-btn {
     all: unset;
     background-color: #1a7483;
     color: white;
@@ -50,33 +113,34 @@ box-shadow:  3px 3px 7px #9ab8ad,
     text-align: center;
     border-radius: 0.2em;
     margin-block-start: 0.5em;
-}
+  }
+  .kuitti-btn:hover {
+    background-color: rgb(4, 66, 77);
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
-.kuitti-form > input {
+  .kuitti-form > input {
     border: none;
     padding-block: 0.2em;
-}
+  }
 
-.kuitti-form > label {
+  .kuitti-form > label {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
     color: white;
-}
+  }
 
-.main-kuitti-card {
-    
+  .main-kuitti-card {
     width: 40em;
     margin: 0 auto;
     padding-block: 1em 6em;
     background-color: white;
     border-radius: 0.5em;
-
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    
-    
-    
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5em;
+  }
 }

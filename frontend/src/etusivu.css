@@ -1,23 +1,64 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-}
-
-
-
-@media (min-width: 400px) { 
-}
-@media (min-width: 600px) {
-
-
-.etusivu {
-    height: 100vh;
+  box-sizing: border-box;
 }
 
 .main-card {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  min-height: 400px;
+
+  background-color: white;
+  margin: 2em auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1420px;
+
+  padding: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5em;
+  color: #555555;
+  line-height: 1.7;
+}
+.main-card-teksti {
+  font-size: 0.9rem;
+  text-align: justify;
+  letter-spacing: -0.4px;
+}
+
+.etusivu-btn {
+  all: unset;
+  background-color: #b5d8cc;
+  background: linear-gradient(to left, #4f828b, #1a7483);
+  padding: 0.8em 1.6em;
+  margin-block: 2em;
+  font-size: 0.9rem;
+  border-radius: 0.4em;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  cursor: pointer;
+}
+
+.etusivu-btn:hover {
+  background-color: rgb(4, 66, 77);
+  text-decoration: underline;
+}
+
+@media (min-width: 400px) {
+}
+@media (min-width: 600px) {
+  .etusivu {
+    height: 100vh;
+  }
+
+  .main-card {
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,37 +66,35 @@
     min-height: 400px;
     padding: 1em;
     background-color: white;
-    margin: 4em auto;   
+    margin: 4em auto;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 1420px;  
+    max-width: 1420px;
     letter-spacing: -0.4px;
     padding: 2em;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5em;
     color: #555555;
     line-height: 1.7;
-}
-.main-card > p {
+    font-size: 1rem;
+  }
+  .main-card-teksti > p {
     margin-block-end: 0.5em;
-}
+  }
 
-.etusivu-btn {
-    all:unset;
+  .etusivu-btn {
+    all: unset;
     background-color: #1a7483;
     padding: 1em 2em;
     margin-block-start: 2em;
-   border-radius: 0.4em;
-   box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
-   color: white;
-   cursor: pointer;
-    
-}
+    border-radius: 0.4em;
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+  }
 
-.etusivu-btn:hover {
-    
+  .etusivu-btn:hover {
     background-color: rgb(4, 66, 77);
     text-decoration: underline;
+  }
 }
-
-} 
