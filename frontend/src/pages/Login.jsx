@@ -1,73 +1,61 @@
-import { useState } from "react";
-import loginService from "../services/loginService";
-import Palautelista from "../components/Palautelista";
-import "./login.css";
+// src/components/CreateUser.js
+import React, { useState } from "react";
+import axios from "axios";
 
-const Login = () => {
+const CreateUser = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [user, setUser] = useState(null);
-  const [errorMessage, setErrorMessage] = useState(null);
+  const [message, setMessage] = useState("");
 
-  const handleLogin = async (event) => {
-    event.preventDefault();
-    console.log(username, password);
-
+  // Käsittelee lomakkeen lähetyksen
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      const user = await loginService.login({
+      // Lähetetään käyttäjän tiedot backendille
+      const response = await axios.post("http://localhost:5000/api/users", {
         username,
         password,
       });
-      setUser(user);
+
+      // Jos käyttäjä luotiin onnistuneesti, näytetään viesti
+      setMessage(response.data.message);
       setUsername("");
       setPassword("");
-    } catch (exception) {
-      setErrorMessage("väärät nimet");
-      setTimeout(() => {
-        setErrorMessage(null);
-      }, 5000);
+    } catch (error) {
+      setMessage(
+        "Virhe käyttäjän luomisessa: " + error.response?.data?.message ||
+          error.message
+      );
     }
   };
 
-  const loginForm = () => (
-    <div className="login-wrapper">
-      <div className="login-card">
-        {errorMessage && <div className="error-message">{errorMessage}</div>}
-        <div className="login-card-wrapper">
-          <form className="login-form" onSubmit={handleLogin}>
-            <div className="input-label-flex">
-              <label htmlFor="">nimi:</label>
-              <input
-                type="text"
-                value={username}
-                name="Username"
-                onChange={(e) => setUsername(e.target.value)}
-              />
-            </div>
-            <div className="input-label-flex">
-              <label htmlFor="">salasana:</label>
-              <input
-                type="password"
-                value={password}
-                name="Password"
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-            <button type="submit" className="login-btn">
-              kirjaudu
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  );
-
   return (
-    <>
-      {!user && loginForm()}
-      {user && <Palautelista />}
-    </>
+    <div>
+      <h2>Luo uusi käyttäjä</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Käyttäjätunnus:</label>
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label>Salasana:</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit">Luo käyttäjä</button>
+      </form>
+      {message && <p>{message}</p>}
+    </div>
   );
 };
 
-export default Login;
+export default CreateUser;

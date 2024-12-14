@@ -45,6 +45,7 @@ const sequelize = require("../db"); // Tämä tuo mukaan Sequelize-yhteyden
 
 // Määritellään Feedback-malli
 const Feedback = sequelize.define(
+  "Feedbacks",
   {
     content: {
       type: DataTypes.TEXT,

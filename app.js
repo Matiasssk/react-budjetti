@@ -4,6 +4,7 @@ const sequelize = require("./db");
 const express = require("express");
 const cors = require("cors");
 const loginRouter = require("./controllers/login");
+const createRouter = require("./controllers/createUser");
 const corsOptions = {
   origin: "https://tutkibudjettia2025.fi", // Frontendin URL
   methods: "GET,POST", // Sallitut HTTP-menetelmät
@@ -17,7 +18,8 @@ app.use(express.json());
 app.use(express.static("dist"));
 app.use("/api/palaute", feedbackRouter);
 
-app.use("/api/login", loginRouter);
+//app.use("/api/login", loginRouter);
+app.use("/api/login", createRouter);
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
