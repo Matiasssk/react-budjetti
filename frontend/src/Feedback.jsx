@@ -71,7 +71,7 @@ const Feedback = () => {
             joka on kiinnostunut datan visualisoinnista ja erityisesti
             yhteiskunnallisista aiheista niin ota hetimiten yhteyttä. Etenkin
             jos satut etsimään VMlle tai valtiolle työntekijää, niin olen valmis
-            viipettä tulemaan töihin oppimaan!
+            viipeettä tulemaan töihin oppimaan!
           </p>
         </div>
       </div>
