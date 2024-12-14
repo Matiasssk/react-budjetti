@@ -1,5 +1,5 @@
 const express = require("express");
-const { User } = require("../models/User"); // Tuodaan User-malli
+const { User } = require("../models/UserSQL"); // Tuodaan User-malli
 
 const router = express.Router();
 
