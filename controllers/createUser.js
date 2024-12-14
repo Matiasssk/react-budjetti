@@ -6,7 +6,7 @@ exports.addUser = async (req, res) => {
   try {
     // Luodaan uusi palautteen tietue
     const newUser = await User.create({
-      name: body.name,
+      username: body.name,
       salasana: body.salasana,
     });
 
