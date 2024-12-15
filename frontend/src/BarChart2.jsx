@@ -39,9 +39,7 @@ const Barchart2 = () => {
         const firstLine = words.slice(0, 3).join(" ");
         const secondLine = words.slice(3, 6).join(" ");
         const thirdLine = words.slice(-1).join(" ");
-        console.log("1", firstLine);
-        console.log("2", secondLine);
-        console.log("3", thirdLine);
+
         return [firstLine, secondLine, thirdLine];
       }
       if (words.length > 5) {
@@ -56,19 +54,7 @@ const Barchart2 = () => {
 
         return [firstLine, secondLine];
       }
-      /*
-      if (words.length > 3) {
-        console.log("words", words);
-        console.log("length", words.length);
-        console.log(words.slice(0, -5));
-        const firstLine = words.slice(0, -2).join(" ");
-        console.log("first", firstLine);
-        const secondLine = words.slice(-2).join(" ");
-        console.log("second", secondLine);
 
-        return [firstLine, secondLine];
-      }
-*/
       const firstLine = words.slice(0, -1).join(" ");
       const secondLine = words[words.length - 1];
 
@@ -335,7 +321,7 @@ const Barchart2 = () => {
         val = value / 1e9;
         count = 1;
       } else {
-        val = value / 1e9;
+        val = value / 1e6;
       }
       val = val.toLocaleString("fi-FI", {
         minimumFractionDigits: 1,
@@ -401,7 +387,6 @@ const Barchart2 = () => {
         .enter()
         .append("tspan")
         .text(function (d, i) {
-          console.log(d, i);
           if (i === 0) return d;
           if (i === 1) return d;
           if (i === 2) return d;
