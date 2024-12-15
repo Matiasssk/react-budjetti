@@ -7,20 +7,73 @@ const Barchart2 = () => {
     window.scrollTo(0, 0);
   }, []);
   useEffect(() => {
-    const getTextWidth = (text, fontSize = 18) => {
+    const getTextWidth = (text, fontSize = 1.5) => {
       const canvas = document.createElement("canvas");
       const context = canvas.getContext("2d");
-      context.font = `${fontSize}px 'Poppins', sans-serif`;
+      context.font = `${fontSize}em 'Poppins', sans-serif`;
+
       return context.measureText(text.toUpperCase()).width;
     };
 
     const margin = { top: 0, right: 0, bottom: 0, left: 0 };
-    const width = 1500 - margin.left - margin.right;
-    const height = 1200 - margin.top - margin.bottom;
-    let barHeight = 77;
-    if (window.innerWidth < 700) {
-      barHeight = 150;
+    let width = 1700 - margin.left - margin.right;
+    let height = 1200 - margin.top - margin.bottom;
+
+    if (window.innerWidth < 800) {
+      width = 900;
+      height = 1000;
     }
+    let barHeight = 88;
+    if (window.innerWidth < 700) {
+      barHeight = 80;
+    }
+
+    const splitText = (text) => {
+      const teksti = text.trim();
+      const words = teksti.split(" ");
+
+      if (words.length < 2) {
+        return [text];
+      }
+      if (words.length > 6) {
+        const firstLine = words.slice(0, 3).join(" ");
+        const secondLine = words.slice(3, 6).join(" ");
+        const thirdLine = words.slice(-1).join(" ");
+        console.log("1", firstLine);
+        console.log("2", secondLine);
+        console.log("3", thirdLine);
+        return [firstLine, secondLine, thirdLine];
+      }
+      if (words.length > 5) {
+        const firstLine = words.slice(0, -3).join(" ");
+        const secondLine = words.slice(-3).join(" ");
+
+        return [firstLine, secondLine];
+      }
+      if (words.length > 4) {
+        const firstLine = words.slice(0, -2).join(" ");
+        const secondLine = words.slice(-2).join(" ");
+
+        return [firstLine, secondLine];
+      }
+      /*
+      if (words.length > 3) {
+        console.log("words", words);
+        console.log("length", words.length);
+        console.log(words.slice(0, -5));
+        const firstLine = words.slice(0, -2).join(" ");
+        console.log("first", firstLine);
+        const secondLine = words.slice(-2).join(" ");
+        console.log("second", secondLine);
+
+        return [firstLine, secondLine];
+      }
+*/
+      const firstLine = words.slice(0, -1).join(" ");
+      const secondLine = words[words.length - 1];
+
+      return [firstLine, secondLine];
+    };
 
     const color = d3
       .scaleOrdinal()
@@ -83,7 +136,7 @@ const Barchart2 = () => {
       )
       .attr("preserveAspectRatio", "xMidYMin meet")
       .style("width", "100%")
-      .style("height", "auto")
+      //.style("height", "auto")
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -174,6 +227,7 @@ const Barchart2 = () => {
         .attr("class", "text")
         .attr("cursor", "pointer")
         .style("fill", (d) => getTextColor(d, xScale))
+
         .attr("transform", function (d) {
           const fillColor = d3.select(this).style("fill");
           if (fillColor === "white") {
@@ -182,7 +236,51 @@ const Barchart2 = () => {
           return `translate(${xScale(d.value)}, 0)`;
         });
 
-      text.append("tspan").text((d) => d.data.name);
+      text.each(function (d) {
+        const selection = d3.select(this);
+        const tarkistus = checkIfWide(d, xScale);
+
+        if (tarkistus === "yli") {
+          const longText = splitText(d.data.name);
+          if (longText.length > 2) {
+            selection
+              .append("tspan")
+              .text(longText[0])
+              //.attr("x", 0)
+              .attr("dy", -15);
+
+            selection
+              .append("tspan")
+              .text(longText[1])
+              .attr("x", 10)
+              .attr("dy", "1.35em");
+
+            selection
+              .append("tspan")
+              .text(longText[2])
+              .attr("x", 10)
+              .attr("dy", "1.35em");
+          } else if (longText.length < 2) {
+            selection.append("tspan").text(d.data.name);
+          } else {
+            selection
+              .append("tspan")
+              .text(longText[0])
+              //.attr("x", 0)
+              .attr("dy", -8);
+
+            selection
+              .append("tspan")
+              .text(longText[1])
+              .attr("x", 10)
+              .attr("dy", "1.35em");
+          }
+        } else {
+          selection.append("tspan").text(d.data.name);
+          //.attr("x", 0)
+          //.attr("dy", 0);
+        }
+      });
 
       text
         .append("tspan")
@@ -198,11 +296,21 @@ const Barchart2 = () => {
         .text((d) => (d.value > 1e9 ? " mrd. €" : " milj. €"));
     }
 
+    function checkIfWide(d, xScale) {
+      const rectWidth = xScale(d.value || 0);
+      const fullText = `${d.data.name} ${(d.value / 1e9).toFixed(
+        1
+      )} (e   k   s    t    ra) mrd. €`;
+      const textWidth = getTextWidth(fullText);
+      return rectWidth < textWidth ? "yli" : "ali";
+    }
+
     function getTextColor(d, xScale) {
       const rectWidth = xScale(d.value || 0);
       const fullText = `${d.data.name} ${(d.value / 1e9).toFixed(
         1
-      )} (ekstra) mrd. €`;
+      )} (ekstra) €`;
+
       const textWidth = getTextWidth(fullText);
       return rectWidth < textWidth ? colorPicker(d) : "white";
     }
@@ -339,8 +447,6 @@ const Barchart2 = () => {
         .duration(500)
 
         .each(function (d, i) {
-          console.log("Entered node data:", d);
-
           const element = d3.select(this);
 
           const rectWidth = xScale(d.value);
@@ -367,7 +473,6 @@ const Barchart2 = () => {
             .style("fill", colorPicker(d))
             .style("stroke", "#fff")
             .each(function (d, i) {
-              console.log(d, i);
               const newElement = d3.select(this);
               newElement.attr("transform", function (i, d) {
                 return `translate(${0}, 0)`;
@@ -544,7 +649,7 @@ const Barchart2 = () => {
         </div>
 
         <div className="svg-wrapper">
-          <svg width="1700" height="2000" ref={ref}></svg>
+          <svg width="1500" ref={ref}></svg>
         </div>
       </div>
     </div>
