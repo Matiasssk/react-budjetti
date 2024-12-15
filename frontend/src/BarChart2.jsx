@@ -328,13 +328,6 @@ const Barchart2 = () => {
         maximumFractionDigits: 1,
       });
       return [val, count];
-      //const val = value / (value > 1e9 ? 1e9 : 1e6);
-      /*
-      return val.toLocaleString("fi-FI", {
-        minimumFractionDigits: 1,
-        maximumFractionDigits: 1,
-      });
-      */
     }
 
     function update(node) {
@@ -382,7 +375,6 @@ const Barchart2 = () => {
           } else {
             return [d.data.name, formatValue(d.value)[0], "milj. €"];
           }
-          // Päivitä arvot
         })
         .enter()
         .append("tspan")
@@ -598,15 +590,23 @@ const Barchart2 = () => {
       headerText
         .selectAll("tspan")
         .data(function (d) {
+          console.log(d.parent);
           if (d.parent.data.name === "flare") {
             return ["Valtion tulot ja menot"];
           }
           if (formatValue(d.value)[1] === 1) {
-            return [d.data.name, formatValue(d.value)[0], "mrd. €"];
+            return [
+              d.parent.data.name,
+              formatValue(d.parent.value)[0],
+              "mrd. €",
+            ];
           } else {
-            return [d.data.name, formatValue(d.value)[0], "milj. €"];
+            return [
+              d.parent.data.name,
+              formatValue(d.parent.value)[0],
+              "milj. €",
+            ];
           }
-          //return [d.parent.data.name, formatValue(d.parent.value), "mrd. €"];
         })
         .join(
           (enter) =>
