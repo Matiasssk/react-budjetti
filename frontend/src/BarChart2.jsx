@@ -287,7 +287,7 @@ const Barchart2 = () => {
         .attr("class", "summat")
         .attr("dx", "10")
         .attr("dy", "1")
-        .text((d) => formatValue(d.value));
+        .text((d) => formatValue(d.value)[0]);
 
       text
         .append("tspan")
@@ -329,11 +329,26 @@ const Barchart2 = () => {
     }
 
     function formatValue(value) {
-      const val = value / (value > 1e9 ? 1e9 : 1e6);
+      let val = value;
+      let count = 0;
+      if (value > 1e9) {
+        val = value / 1e9;
+        count = 1;
+      } else {
+        val = value / 1e9;
+      }
+      val = val.toLocaleString("fi-FI", {
+        minimumFractionDigits: 1,
+        maximumFractionDigits: 1,
+      });
+      return [val, count];
+      //const val = value / (value > 1e9 ? 1e9 : 1e6);
+      /*
       return val.toLocaleString("fi-FI", {
         minimumFractionDigits: 1,
         maximumFractionDigits: 1,
       });
+      */
     }
 
     function update(node) {
@@ -376,11 +391,17 @@ const Barchart2 = () => {
           if (d.data.name === "flare") {
             return ["Valtion tulot ja menot"];
           }
-          return [d.data.name, formatValue(d.value), "mrd. €"]; // Päivitä arvot
+          if (formatValue(d.value)[1] === 1) {
+            return [d.data.name, formatValue(d.value)[0], "mrd. €"];
+          } else {
+            return [d.data.name, formatValue(d.value)[0], "milj. €"];
+          }
+          // Päivitä arvot
         })
         .enter()
         .append("tspan")
         .text(function (d, i) {
+          console.log(d, i);
           if (i === 0) return d;
           if (i === 1) return d;
           if (i === 2) return d;
@@ -595,7 +616,12 @@ const Barchart2 = () => {
           if (d.parent.data.name === "flare") {
             return ["Valtion tulot ja menot"];
           }
-          return [d.parent.data.name, formatValue(d.parent.value), "mrd. €"];
+          if (formatValue(d.value)[1] === 1) {
+            return [d.data.name, formatValue(d.value)[0], "mrd. €"];
+          } else {
+            return [d.data.name, formatValue(d.value)[0], "milj. €"];
+          }
+          //return [d.parent.data.name, formatValue(d.parent.value), "mrd. €"];
         })
         .join(
           (enter) =>
