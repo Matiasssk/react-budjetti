@@ -12,7 +12,7 @@ const Header = () => {
     <>
       <div className="main-header">
         <div className="header-text-wrapper">
-          <h1>valtion budjetti 2025</h1>
+          <h1>Valtion budjetti 2025</h1>
           <input id="menu-toggle" type="checkbox" />
           <label className="menu-button-container" htmlFor="menu-toggle">
             <div className="menu-button"></div>

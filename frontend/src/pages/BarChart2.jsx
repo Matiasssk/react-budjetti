@@ -1,7 +1,7 @@
 import * as d3 from "d3";
 import { useEffect, useRef } from "react";
-import "./index.css";
-const Barchart2 = () => {
+import "../index.css";
+const Barchart2 = ({ handleBarClick, handleMapClick }) => {
   const ref = useRef();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -60,7 +60,7 @@ const Barchart2 = () => {
 
       return [firstLine, secondLine];
     };
-
+    /*
     const color = d3
       .scaleOrdinal()
       .domain([
@@ -108,6 +108,55 @@ const Barchart2 = () => {
         "rgb(71, 154, 54)",
         "rgb(43, 72, 151)",
         "rgb(71, 154, 54)",
+      ]);
+*/
+    const color = d3
+      .scaleOrdinal()
+      .domain([
+        "VALTIOVARAINMINISTERIÖN HALLINNONALA",
+        "SOSIAALI- JA TERVEYSMINISTERIÖN HALLINNONALA",
+        "OPETUS- JA KULTTUURIMINISTERIÖN HALLINNONALA",
+        "PUOLUSTUSMINISTERIÖN HALLINNONALA",
+        "TYÖ- JA ELINKEINOMINISTERIÖN HALLINNONALA",
+        "LIIKENNE- JA VIESTINTÄMINISTERIÖN HALLINNONALA",
+        "MAA- JA METSÄTALOUSMINISTERIÖN HALLINNONALA",
+        "VALTIONVELAN KOROT",
+        "SISÄMINISTERIÖN HALLINNONALA",
+        "ULKOMINISTERIÖN HALLINNONALA",
+        "OIKEUSMINISTERIÖN HALLINNONALA",
+        "YMPÄRISTÖMINISTERIÖN HALLINNONALA",
+        "VALTIONEUVOSTON KANSLIA",
+        "EDUSKUNTA",
+        "TASAVALLAN PRESIDENTTI",
+        "VEROT JA VERONLUONTEISET TULOT",
+        "LAINAT",
+        "SEKALAISET TULOT",
+        "KORKOTULOT, OSAKKEIDEN MYYNTITULOT JA VOITON TULOUTUKSET",
+        "Menot",
+        "Tulot",
+      ])
+      .range([
+        "rgb(40, 60, 120)", // Syvä sininen
+        "rgb(75, 35, 110)", // Tumma violetti
+        "rgb(50, 85, 60)", // Tumma metsänvihreä
+        "rgb(40, 70, 90)", // Tumma petrooli
+        "rgb(70, 45, 120)", // Tumma syvä violetti
+        "rgb(95, 75, 160)", // Tumma laventeli
+        "rgb(55, 100, 50)", // Syvä vihreä
+        "rgb(120, 55, 110)", // Syvä fuksia
+        "rgb(40, 55, 90)", // Syvä tumma sininen
+        "rgb(40, 60, 120)", // Syvä sininen (yhtenäinen)
+        "rgb(65, 85, 110)", // Tumma siniharmaa
+        "rgba(15, 20, 25, 0.8)", // Tumma läpinäkyvä (syvempi)
+        "rgba(15, 20, 25, 0.8)", // Tumma läpinäkyvä
+        "rgba(15, 20, 25, 0.8)", // Tumma läpinäkyvä
+        "rgba(15, 20, 25, 0.8)", // Tumma läpinäkyvä
+        "rgb(65, 110, 60)", // Tumma sammaleenvihreä
+        "rgb(150, 55, 65)", // Tumma punainen
+        "rgb(65, 110, 60)", // Tumma sammaleenvihreä
+        "rgb(65, 110, 60)", // Tumma sammaleenvihreä
+        "rgb(40, 60, 120)", // Syvä sininen
+        "rgb(65, 110, 60)", // Tumma sammaleenvihreä
       ]);
 
     const svg = d3
@@ -644,8 +693,28 @@ const Barchart2 = () => {
       <div className="wrapper">
         <div className="main clearfix">
           <div className="content-wrapper">
-            <h2>TALOUSARVIO 2025</h2>
-            <div>(Tietolähde: Hallituksen esitys 2025)</div>
+            <div className="content-header-wrapper">
+              <h2>TALOUSARVIO 2025</h2>
+              <div>(Tietolähde: Hallituksen esitys 2025)</div>
+            </div>
+            <div className="button-wrapper">
+              <div className="barchart-icon-btn" onClick={handleBarClick}>
+                {" "}
+                <img
+                  src="../images/bar-chart.svg"
+                  alt="Barchart icon"
+                  className="barchart-icon"
+                />
+              </div>
+              <div className="treemap-icon-btn" onClick={handleMapClick}>
+                {" "}
+                <img
+                  src="../images/data-treemap.svg"
+                  alt="Treemap icon"
+                  className="treemap-icon"
+                />
+              </div>
+            </div>
           </div>
 
           <div className="headerWrapper">
