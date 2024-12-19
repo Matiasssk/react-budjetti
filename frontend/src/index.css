@@ -214,7 +214,7 @@ body {
 
 .treemap-icon-btn {
   all: unset;
-  padding: 0.2em 0.4em;
+  padding: 0.2em 0.2em;
 
   border-right: #555555 1px solid;
   border-top: #555555 1px solid;
@@ -230,7 +230,7 @@ body {
 
 .barchart-icon-btn {
   all: unset;
-  padding: 0.2em 0.4em;
+  padding: 0.2em 0.2em;
 
   border-left: #555555 1px solid;
   border-top: #555555 1px solid;
@@ -428,7 +428,7 @@ body {
 
   .treemap-icon-btn {
     all: unset;
-    padding: 0.4em 0.8em;
+    padding: 0.2em 0.2em;
 
     border-right: #555555 1px solid;
     border-top: #555555 1px solid;
@@ -437,14 +437,16 @@ body {
     border-bottom-right-radius: 1em;
   }
   .treemap-icon {
-    width: 2em;
-    height: 2em;
+    width: 1.7em;
+    height: 1.7em;
+    margin: 0;
+    padding: 0;
     margin-inline-end: -1px;
   }
 
   .barchart-icon-btn {
     all: unset;
-    padding: 0.4em 0.8em;
+    padding: 0.2em 0.2em;
 
     border-left: #555555 1px solid;
     border-top: #555555 1px solid;
@@ -453,8 +455,11 @@ body {
     border-bottom-left-radius: 0.1em;
   }
   .barchart-icon {
-    width: 2em;
-    height: 2em;
+    width: 1.7em;
+    height: 1.7em;
+
+    margin: 0;
+    padding: 0;
   }
 
   .treemap-icon-btn:hover {
@@ -695,6 +700,52 @@ body {
   .breadcrumb > h2 {
     margin: 0;
   }
+  .button-wrapper {
+    display: flex;
+
+    margin-inline-end: 2em;
+    margin: 0;
+  }
+
+  .treemap-icon-btn {
+    all: unset;
+    padding: 0.4em 0.8em;
+
+    border-right: #555555 1px solid;
+    border-top: #555555 1px solid;
+    border-bottom: #555555 1px solid;
+    border-top-right-radius: 0.1em;
+    border-bottom-right-radius: 1em;
+  }
+  .treemap-icon {
+    width: 2em;
+    height: 2em;
+    margin-inline-end: -1px;
+  }
+
+  .barchart-icon-btn {
+    all: unset;
+    padding: 0.4em 0.8em;
+
+    border-left: #555555 1px solid;
+    border-top: #555555 1px solid;
+    border-bottom: #555555 1px solid;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 0.1em;
+  }
+  .barchart-icon {
+    width: 2em;
+    height: 2em;
+  }
+
+  .treemap-icon-btn:hover {
+    background-color: gray;
+    cursor: pointer;
+  }
+  .barchart-icon-btn:hover {
+    background-color: gray;
+    cursor: pointer;
+  }
 }
 
 .first-text {
@@ -707,51 +758,4 @@ body {
 .updated-text {
   font-weight: 600;
   opacity: 0.8;
-}
-
-.button-wrapper {
-  display: flex;
-
-  margin-inline-end: 2em;
-  margin: 0;
-}
-
-.treemap-icon-btn {
-  all: unset;
-  padding: 0.4em 0.8em;
-
-  border-right: #555555 1px solid;
-  border-top: #555555 1px solid;
-  border-bottom: #555555 1px solid;
-  border-top-right-radius: 0.1em;
-  border-bottom-right-radius: 1em;
-}
-.treemap-icon {
-  width: 2em;
-  height: 2em;
-  margin-inline-end: -1px;
-}
-
-.barchart-icon-btn {
-  all: unset;
-  padding: 0.4em 0.8em;
-
-  border-left: #555555 1px solid;
-  border-top: #555555 1px solid;
-  border-bottom: #555555 1px solid;
-  border-top-left-radius: 1em;
-  border-bottom-left-radius: 0.1em;
-}
-.barchart-icon {
-  width: 2em;
-  height: 2em;
-}
-
-.treemap-icon-btn:hover {
-  background-color: gray;
-  cursor: pointer;
-}
-.barchart-icon-btn:hover {
-  background-color: gray;
-  cursor: pointer;
 }
