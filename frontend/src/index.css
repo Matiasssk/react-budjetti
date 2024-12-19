@@ -587,7 +587,7 @@ body {
   .breadcrumb-item:not(:last-child):not(:first-of-type)::after {
     content: "";
     display: inline-flex;
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 1.4em;
     height: 1.4em;
     background-image: url("../images/chevron_right.svg");
