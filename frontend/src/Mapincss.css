@@ -5,7 +5,6 @@
 html {
   font-family: "Poppins", "Open Sans", Helvetica, Arial, sans-serif;
 }
-
 #chart {
   max-width: 100%;
   overflow: auto;
@@ -91,7 +90,7 @@ rect.parent,
   flex-direction: column;
   letter-spacing: -0.2px;
   height: 100%;
-  gap: em;
+
   align-items: center;
   justify-content: center;
   font-family: "Poppins", "Open Sans", Helvetica, Arial, sans-serif;
@@ -148,28 +147,52 @@ rect.parent {
   stroke: rgb(255, 255, 255); /* Reuna pysyy mustana */
   stroke-width: 0;
 }
-
 .breadcrumb-treemap {
   font-family: "Poppins", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 600;
   display: inline-flex;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 
   margin-block-start: 2em;
 
   text-transform: lowercase;
 }
 
-.vaihda-ruudukko {
-  all: unset;
-  padding: 0.2em 0.6em;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  background-color: rgb(0, 100, 117);
-  color: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  letter-spacing: -0.4px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  box-shadow: 3px 3px 3px rgba(75, 74, 74, 0.25);
+@media (min-width: 400px) {
+  .breadcrumb-treemap {
+    font-family: "Poppins", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    display: inline-flex;
+    font-size: 0.6rem;
+
+    margin-block-start: 2em;
+
+    text-transform: lowercase;
+  }
+}
+@media (min-width: 600px) {
+  .breadcrumb-treemap {
+    font-family: "Poppins", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    display: inline-flex;
+    font-size: 1rem;
+
+    margin-block-start: 2em;
+
+    text-transform: lowercase;
+  }
+
+  .vaihda-ruudukko {
+    all: unset;
+    padding: 0.2em 0.6em;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background-color: rgb(0, 100, 117);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    letter-spacing: -0.4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 3px rgba(75, 74, 74, 0.25);
+  }
 }

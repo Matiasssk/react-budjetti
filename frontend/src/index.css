@@ -176,42 +176,80 @@ body {
 
 .content-wrapper {
   display: flex;
-  gap: 1em;
   justify-content: space-between;
-
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block: 0;
+  margin-inline-end: 0.5em;
 }
 .content-header-wrapper {
   display: flex;
-  gap: 1em;
-  align-items: flex-end;
-
-  margin-block-start: 0;
-  margin-block-end: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3em;
+  justify-content: center;
+  color: #555555;
+  margin-block: 0;
 }
 .content-header-wrapper > h2 {
-  font-size: 1.8rem;
-  margin-block-start: 0;
-  margin-block-end: 0.2em;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-
   line-height: 1;
   margin: 0;
   padding: 0;
+  font-size: 1rem;
 
-  align-self: auto;
+  font-weight: 400;
+  letter-spacing: -1.8px;
 }
 .content-header-wrapper > div {
-  font-style: italic;
-  font-size: 0.5rem;
-  letter-spacing: -0.2px;
-
-  line-height: 1.4;
+  padding-inline-start: 0.2em;
+  font-size: 0.6rem;
+  line-height: 1.6;
   padding: 0;
   align-self: auto;
   font-style: italic;
+  letter-spacing: -0.2px;
+}
+
+.button-wrapper {
+  display: flex;
+}
+
+.treemap-icon-btn {
+  all: unset;
+  padding: 0.2em 0.4em;
+
+  border-right: #555555 1px solid;
+  border-top: #555555 1px solid;
+  border-bottom: #555555 1px solid;
+  border-top-right-radius: 0.1em;
+  border-bottom-right-radius: 1em;
+}
+.treemap-icon {
+  width: 1em;
+  height: 1em;
+  margin-inline-end: -1px;
+}
+
+.barchart-icon-btn {
+  all: unset;
+  padding: 0.2em 0.4em;
+
+  border-left: #555555 1px solid;
+  border-top: #555555 1px solid;
+  border-bottom: #555555 1px solid;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 0.1em;
+}
+.barchart-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.treemap-icon-btn:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+.barchart-icon-btn:hover {
+  background-color: gray;
+  cursor: pointer;
 }
 
 @media (min-width: 400px) {
@@ -244,7 +282,7 @@ body {
     align-items: center;
     font-weight: 700;
     font-size: 1.2rem;
-    margin-block-start: 0em;
+    margin-block-start: 0.4em;
   }
 
   .breadcrumb {
@@ -263,7 +301,7 @@ body {
   .breadcrumb-first-item {
     font-weight: 600;
     display: inline-flex;
-    font-size: 0.2rem;
+    font-size: 0.4rem;
     flex-wrap: nowrap;
     margin-block-start: 2em;
     text-transform: lowercase;
@@ -272,7 +310,7 @@ body {
   .breadcrumb-item:not(:last-child):not(:first-of-type)::after {
     content: "";
     display: inline-flex;
-    font-size: 0.2rem;
+    font-size: 0.4rem;
     width: 1.2em;
     height: 1.2em;
     background-image: url("../images/chevron_right.svg");
@@ -349,9 +387,107 @@ body {
     font-style: italic;
     font-weight: 500;
   }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-block: 0;
+  }
+  .content-header-wrapper {
+    display: flex;
+    gap: 0em;
+    align-items: flex-start;
+    color: #555555;
+    margin-block: 0;
+  }
+  .content-header-wrapper > h2 {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    align-self: auto;
+    font-weight: 400;
+    letter-spacing: -1.8px;
+  }
+  .content-header-wrapper > div {
+    padding-inline-start: 0.2em;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    padding: 0;
+    align-self: auto;
+    font-style: italic;
+    letter-spacing: -0.2px;
+  }
+
+  .button-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .treemap-icon-btn {
+    all: unset;
+    padding: 0.4em 0.8em;
+
+    border-right: #555555 1px solid;
+    border-top: #555555 1px solid;
+    border-bottom: #555555 1px solid;
+    border-top-right-radius: 0.1em;
+    border-bottom-right-radius: 1em;
+  }
+  .treemap-icon {
+    width: 2em;
+    height: 2em;
+    margin-inline-end: -1px;
+  }
+
+  .barchart-icon-btn {
+    all: unset;
+    padding: 0.4em 0.8em;
+
+    border-left: #555555 1px solid;
+    border-top: #555555 1px solid;
+    border-bottom: #555555 1px solid;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 0.1em;
+  }
+  .barchart-icon {
+    width: 2em;
+    height: 2em;
+  }
+
+  .treemap-icon-btn:hover {
+    background-color: gray;
+    cursor: pointer;
+  }
+  .barchart-icon-btn:hover {
+    background-color: gray;
+    cursor: pointer;
+  }
+  .breadcrumb-treemap {
+    font-family: "Poppins", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    display: inline-flex;
+    font-size: 0.6rem;
+
+    margin-block-start: 2em;
+
+    text-transform: lowercase;
+  }
 }
 
 @media (min-width: 600px) {
+  .breadcrumb-treemap {
+    font-family: "Poppins", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    display: inline-flex;
+    font-size: 0.6rem;
+
+    margin-block-start: 2em;
+
+    text-transform: lowercase;
+  }
   body {
     font-family: "Poppins", sans-serif;
     background-color: #f9f9f8;
@@ -373,13 +509,17 @@ body {
   .content-wrapper {
     display: flex;
     justify-content: space-between;
-
+    align-content: center;
     margin-block: 0;
+    margin-block-start: 0.5em;
+    margin-inline-end: 1em;
   }
   .content-header-wrapper {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 2em;
-    align-items: flex-end;
+    margin-inline-end: 2em;
     color: #555555;
     margin-block: 0;
   }
@@ -387,14 +527,14 @@ body {
     line-height: 1;
     margin: 0;
     padding: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     align-self: auto;
     font-weight: 400;
     letter-spacing: -1.8px;
   }
   .content-header-wrapper > div {
     padding-inline-start: 0.2em;
-    font-size: 2rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     padding: 0;
     align-self: auto;
@@ -437,7 +577,7 @@ body {
   .breadcrumb-first-item {
     font-weight: 600;
     display: inline-flex;
-    font-size: 0.8rem;
+    font-size: 1rem;
 
     margin-block-start: 2em;
 
@@ -573,6 +713,7 @@ body {
   display: flex;
 
   margin-inline-end: 2em;
+  margin: 0;
 }
 
 .treemap-icon-btn {
@@ -588,6 +729,7 @@ body {
 .treemap-icon {
   width: 2em;
   height: 2em;
+  margin-inline-end: -1px;
 }
 
 .barchart-icon-btn {

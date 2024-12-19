@@ -10,22 +10,22 @@ const Budjetti = () => {
   const [ruudukko, setRuudukko] = useState(false); // Vaihtoehdon hallinta
 
   const handleBarClick = () => {
-    setRuudukko(true);
+    setRuudukko(false);
   };
   const handleMapClick = () => {
-    setRuudukko(false);
+    setRuudukko(true);
   };
 
   return (
     <>
       <div className="svg-wrapper">
         {ruudukko ? (
-          <Barchart2
+          <TreemapContainer
             handleBarClick={handleBarClick}
             handleMapClick={handleMapClick}
           />
         ) : (
-          <TreemapContainer
+          <Barchart2
             handleBarClick={handleBarClick}
             handleMapClick={handleMapClick}
           />
