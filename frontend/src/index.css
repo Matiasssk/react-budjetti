@@ -214,8 +214,10 @@ body {
 
 .treemap-icon-btn {
   all: unset;
-  padding: 0.2em 0.2em;
-
+  display: flex;
+  align-items: center;
+  padding: 0em 0.5em 0em 0.6em;
+  height: 80%;
   border-right: #555555 1px solid;
   border-top: #555555 1px solid;
   border-bottom: #555555 1px solid;
@@ -223,15 +225,19 @@ body {
   border-bottom-right-radius: 1em;
 }
 .treemap-icon {
-  width: 1em;
-  height: 1em;
+  width: 0.9em;
+  height: 0.9em;
+  padding: 0;
+  margin: 0;
   margin-inline-end: -1px;
 }
 
 .barchart-icon-btn {
   all: unset;
-  padding: 0.2em 0.2em;
-
+  display: flex;
+  align-items: center;
+  padding: 0em 0.5em 0em 0.6em;
+  height: 80%;
   border-left: #555555 1px solid;
   border-top: #555555 1px solid;
   border-bottom: #555555 1px solid;
@@ -239,8 +245,10 @@ body {
   border-bottom-left-radius: 0.1em;
 }
 .barchart-icon {
-  width: 1em;
-  height: 1em;
+  width: 0.9em;
+  height: 0.9em;
+  padding: 0;
+  margin: 0;
 }
 
 .treemap-icon-btn:hover {
@@ -428,7 +436,9 @@ body {
 
   .treemap-icon-btn {
     all: unset;
-    padding: 0.2em 0.2em;
+    display: flex;
+    align-items: center;
+    padding: 0.15em 0.3em 0.15em 0.2em;
 
     border-right: #555555 1px solid;
     border-top: #555555 1px solid;
@@ -437,8 +447,8 @@ body {
     border-bottom-right-radius: 1em;
   }
   .treemap-icon {
-    width: 1.7em;
-    height: 1.7em;
+    width: 1.5em;
+    height: 1.5em;
     margin: 0;
     padding: 0;
     margin-inline-end: -1px;
@@ -446,7 +456,9 @@ body {
 
   .barchart-icon-btn {
     all: unset;
-    padding: 0.2em 0.2em;
+    display: flex;
+    align-items: center;
+    padding: 0.15em 0.3em 0.15em 0.2em;
 
     border-left: #555555 1px solid;
     border-top: #555555 1px solid;
@@ -455,8 +467,8 @@ body {
     border-bottom-left-radius: 0.1em;
   }
   .barchart-icon {
-    width: 1.7em;
-    height: 1.7em;
+    width: 1.5em;
+    height: 1.5em;
 
     margin: 0;
     padding: 0;
