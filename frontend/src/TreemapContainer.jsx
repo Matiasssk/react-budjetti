@@ -7,7 +7,7 @@ const TreemapContainer = ({ handleBarClick, handleMapClick }) => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     if (data !== null) return;
-    d3.json("data.json")
+    d3.json("eduskunnan_kirjelma_muunnettu.json")
       .then((data) => {
         setData(data);
         setLoading(false);

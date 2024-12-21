@@ -47,7 +47,7 @@ const ShowVerokuitti = ({ summa }) => {
   useEffect(() => {
     const taxValue = laskeVero(summa);
 
-    d3.json("uusiMenot.json").then((data) => {
+    d3.json("menot_uusi.json").then((data) => {
       const root = d3
         .hierarchy(data)
         .sum((d) => d.size)

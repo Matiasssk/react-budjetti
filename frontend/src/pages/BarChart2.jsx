@@ -186,7 +186,7 @@ const Barchart2 = ({ handleBarClick, handleMapClick }) => {
 
     const partitionLayout = d3.partition().size([width, height]);
 
-    d3.json("data.json").then((data) => {
+    d3.json("eduskunnan_kirjelma_muunnettu.json").then((data) => {
       const combinedRoot = d3
         .hierarchy(data)
         .sum((d) => d.size)
