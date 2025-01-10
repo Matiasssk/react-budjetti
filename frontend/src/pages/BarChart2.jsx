@@ -1,8 +1,16 @@
 import * as d3 from "d3";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import PickYear from "../components/PickYear";
 import "../index.css";
 const Barchart2 = ({ handleBarClick, handleMapClick }) => {
   const ref = useRef();
+  const [changeImg, setChangeImg] = useState(false);
+  const [selectedYear, setSelectedYear] = useState("2025");
+
+  const handleYearChange = (year) => {
+    setSelectedYear(year);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -158,10 +166,10 @@ const Barchart2 = ({ handleBarClick, handleMapClick }) => {
         "rgb(40, 60, 120)", // Syvä sininen
         "rgb(65, 110, 60)", // Tumma sammaleenvihreä
       ]);
+    const svg = d3.select(ref.current);
+    svg.selectAll("*").remove();
 
-    const svg = d3
-      .select(ref.current)
-
+    svg
       .attr("class", "main-svg")
       .attr(
         "viewBox",
@@ -185,8 +193,10 @@ const Barchart2 = ({ handleBarClick, handleMapClick }) => {
       .style("fill", "rgb(255, 255, 255, 0.7");
 
     const partitionLayout = d3.partition().size([width, height]);
+    const year = selectedYear;
+    const fileName = `budjetti_${year}.json`;
 
-    d3.json("eduskunnan_kirjelma_muunnettu.json").then((data) => {
+    d3.json(fileName).then((data) => {
       const combinedRoot = d3
         .hierarchy(data)
         .sum((d) => d.size)
@@ -205,16 +215,17 @@ const Barchart2 = ({ handleBarClick, handleMapClick }) => {
     function initializeChart(root) {
       const nodes = svg
         .selectAll(".node")
+
         .data(root.children || [])
         .enter()
         .append("g")
         .attr("class", "node")
-        .attr(
-          "viewBox",
-          `0 0 ${width + margin.left + margin.right} ${
-            height + margin.top + margin.bottom
-          }`
-        )
+        ///  .attr(
+        //   "viewBox",
+        //  `0 0 ${width + margin.left + margin.right} ${
+        //    height + margin.top + margin.bottom
+        //  }`
+        // )
         .attr("preserveAspectRatio", "xMidYMin meet")
         .attr("id", (d, i) => `node-${i}`)
         .attr("transform", function (d, i) {
@@ -639,7 +650,6 @@ const Barchart2 = ({ handleBarClick, handleMapClick }) => {
       headerText
         .selectAll("tspan")
         .data(function (d) {
-          console.log(d.parent);
           if (d.parent.data.name === "flare") {
             return ["Valtion tulot ja menot"];
           }
@@ -686,7 +696,7 @@ const Barchart2 = ({ handleBarClick, handleMapClick }) => {
       if (!node.parent) return;
       goUp(node);
     }
-  }, []);
+  }, [selectedYear]);
 
   return (
     <div>
@@ -694,25 +704,44 @@ const Barchart2 = ({ handleBarClick, handleMapClick }) => {
         <div className="main clearfix">
           <div className="content-wrapper">
             <div className="content-header-wrapper">
-              <h2>TALOUSARVIO 2025</h2>
-              <div>(Tietolähde: Hallituksen esitys 2025)</div>
+              <h2>TALOUSARVIO {selectedYear}</h2>
+              <div>(Tietolähde: Hallituksen esitys {selectedYear})</div>
             </div>
-            <div className="button-wrapper">
-              <div className="barchart-icon-btn" onClick={handleBarClick}>
-                {" "}
-                <img
-                  src="../images/bar-chart.svg"
-                  alt="Barchart icon"
-                  className="barchart-icon"
-                />
-              </div>
-              <div className="treemap-icon-btn" onClick={handleMapClick}>
-                {" "}
-                <img
-                  src="../images/data-treemap.svg"
-                  alt="Treemap icon"
-                  className="treemap-icon"
-                />
+            <div className="year-btn-flex">
+              <PickYear handleYearChange={handleYearChange} />
+              <div className="button-wrapper">
+                <div className="barchart-icon-btn" onClick={handleBarClick}>
+                  <svg
+                    className="barchart-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    width="16"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z" />
+                  </svg>
+                </div>
+                <div
+                  className="treemap-icon-btn"
+                  onMouseEnter={() => setChangeImg(!changeImg)}
+                  onMouseLeave={() => setChangeImg(!changeImg)}
+                  onClick={handleMapClick}
+                >
+                  {!changeImg ? (
+                    <img
+                      src="../images/data-treemap.svg"
+                      alt="Treemap icon"
+                      className="treemap-icon"
+                    />
+                  ) : (
+                    <img
+                      src="../images/data-treemap_blue.png"
+                      alt="Treemap icon"
+                      className="treemap-icon"
+                    />
+                  )}
+                </div>
               </div>
             </div>
           </div>

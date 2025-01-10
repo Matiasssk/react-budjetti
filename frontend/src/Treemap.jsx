@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import "./Mapincss.css";
+import PickYear from "./components/PickYear";
 import "./index.css";
 
 function formatValue(value) {
@@ -118,9 +119,16 @@ const color = d3
     "rgb(65, 110, 60)", // Tumma sammaleenvihreä
   ]);
 
-const Treemap = ({ data, handleBarClick, handleMapClick }) => {
+const Treemap = ({
+  data,
+  handleBarClick,
+  handleMapClick,
+  handleYearChange,
+}) => {
   const chartRef = useRef(null);
   const [breadcrumbText, setBreadcrumbText] = React.useState("");
+  const [changeImg, setChangeImg] = useState(false);
+
   useEffect(() => {
     if (!data || !chartRef.current) return;
 
@@ -488,22 +496,42 @@ const Treemap = ({ data, handleBarClick, handleMapClick }) => {
               <h2>TALOUSARVIO 2025</h2>
               <div>(Tietolähde: Hallituksen esitys 2025)</div>
             </div>
-            <div className="button-wrapper">
-              <div className="barchart-icon-btn" onClick={handleBarClick}>
-                {" "}
-                <img
-                  src="../images/bar-chart.svg"
-                  alt="Barchart icon"
-                  className="barchart-icon"
-                />
-              </div>
-              <div className="treemap-icon-btn" onClick={handleMapClick}>
-                {" "}
-                <img
-                  src="../images/data-treemap.svg"
-                  alt="Treemap icon"
-                  className="treemap-icon"
-                />
+            <div className="year-btn-flex">
+              <PickYear handleYearChange={handleYearChange} />
+
+              <div className="button-wrapper">
+                <div className="barchart-icon-btn" onClick={handleBarClick}>
+                  <svg
+                    className="barchart-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    width="16"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z" />
+                  </svg>
+                </div>
+                <div
+                  className="treemap-icon-btn"
+                  onMouseEnter={() => setChangeImg(!changeImg)}
+                  onMouseLeave={() => setChangeImg(!changeImg)}
+                  onClick={handleMapClick}
+                >
+                  {!changeImg ? (
+                    <img
+                      src="../images/data-treemap.svg"
+                      alt="Treemap icon"
+                      className="treemap-icon"
+                    />
+                  ) : (
+                    <img
+                      src="../images/data-treemap_blue.png"
+                      alt="Treemap icon"
+                      className="treemap-icon"
+                    />
+                  )}
+                </div>
               </div>
             </div>
           </div>

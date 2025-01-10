@@ -201,7 +201,7 @@ body {
 .content-header-wrapper > div {
   padding-inline-start: 0.2em;
   font-size: 0.6rem;
-  line-height: 1.6;
+  line-height: 0.8;
   padding: 0;
   align-self: auto;
   font-style: italic;
@@ -212,54 +212,76 @@ body {
   display: flex;
 }
 
-.treemap-icon-btn {
-  all: unset;
+.button-wrapper {
   display: flex;
-  align-items: center;
-  padding: 0em 0.5em 0em 0.6em;
-  height: 80%;
-  border-right: #555555 1px solid;
-  border-top: #555555 1px solid;
-  border-bottom: #555555 1px solid;
-  border-top-right-radius: 0.1em;
-  border-bottom-right-radius: 1em;
+  gap: 0.2em;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  margin-inline-end: 1em;
+  margin: 0;
+}
+.treemap-icon-btn {
+  padding: 0.4em 0.4em;
+  transition: background-color 0.3s ease;
+
+  background-color: transparent;
+  background-color: rgb(26, 116, 131);
+}
+.barchart-icon-btn {
+  background-color: transparent;
+  background-color: rgb(26, 116, 131);
+  padding-inline: 0.4em;
+  height: 100%;
+  transition: background-color 0.3s ease; /* Tämä on vieläkin järkevää, jos haluat taustavärin siirtymistä */
+}
+.treemap-icon-btn:hover .treemap-icon {
+  filter: unset;
+  cursor: pointer;
+  background-color: rgb(240, 240, 240);
+}
+.treemap-icon-btn:hover {
+  background-color: rgb(240, 240, 240);
 }
 .treemap-icon {
-  width: 0.9em;
-  height: 0.9em;
-  padding: 0;
-  margin: 0;
+  width: 1.2em;
+  height: 100%;
   margin-inline-end: -1px;
+  filter: invert(1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.barchart-icon-btn {
-  all: unset;
-  display: flex;
-  align-items: center;
-  padding: 0em 0.5em 0em 0.6em;
-  height: 80%;
-  border-left: #555555 1px solid;
-  border-top: #555555 1px solid;
-  border-bottom: #555555 1px solid;
-  border-top-left-radius: 1em;
-  border-bottom-left-radius: 0.1em;
-}
-.barchart-icon {
-  width: 0.9em;
-  height: 0.9em;
-  padding: 0;
-  margin: 0;
-}
-
-.treemap-icon-btn:hover {
-  background-color: gray;
-  cursor: pointer;
-}
 .barchart-icon-btn:hover {
-  background-color: gray;
-  cursor: pointer;
+  background-color: rgb(
+    240,
+    240,
+    240
+  ); /* Taustaväri muuttuu napissa hover-tilassa */
 }
 
+.barchart-icon-btn:hover .barchart-icon {
+  cursor: pointer;
+  fill: rgb(26, 116, 131); /* Ikonin väri muuttuu hover-tilassa */
+}
+
+.barchart-icon {
+  width: 1.2em;
+  height: 100%;
+  fill: white;
+  transition: fill 0.3s ease; /* Tässä siirretään transition fill-ominaisuuteen */
+}
+
+.barchart-icon-btn:hover .barchart-icon {
+  cursor: pointer;
+  fill: rgb(26, 116, 131); /* Tässä vaihtuu iconin väri */
+}
+.year-btn-flex {
+  display: flex;
+  gap: 0.4em;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+}
 @media (min-width: 400px) {
   .wrapper {
     background-color: rgba(255, 255, 255, 0.9);
@@ -399,7 +421,7 @@ body {
   .content-wrapper {
     display: flex;
     justify-content: space-between;
-
+    align-items: flex-start;
     margin-block: 0;
   }
   .content-header-wrapper {
@@ -428,60 +450,6 @@ body {
     letter-spacing: -0.2px;
   }
 
-  .button-wrapper {
-    display: flex;
-    align-items: center;
-    margin: 0;
-  }
-
-  .treemap-icon-btn {
-    all: unset;
-    display: flex;
-    align-items: center;
-    padding: 0.15em 0.3em 0.15em 0.2em;
-
-    border-right: #555555 1px solid;
-    border-top: #555555 1px solid;
-    border-bottom: #555555 1px solid;
-    border-top-right-radius: 0.1em;
-    border-bottom-right-radius: 1em;
-  }
-  .treemap-icon {
-    width: 1.5em;
-    height: 1.5em;
-    margin: 0;
-    padding: 0;
-    margin-inline-end: -1px;
-  }
-
-  .barchart-icon-btn {
-    all: unset;
-    display: flex;
-    align-items: center;
-    padding: 0.15em 0.3em 0.15em 0.2em;
-
-    border-left: #555555 1px solid;
-    border-top: #555555 1px solid;
-    border-bottom: #555555 1px solid;
-    border-top-left-radius: 1em;
-    border-bottom-left-radius: 0.1em;
-  }
-  .barchart-icon {
-    width: 1.5em;
-    height: 1.5em;
-
-    margin: 0;
-    padding: 0;
-  }
-
-  .treemap-icon-btn:hover {
-    background-color: gray;
-    cursor: pointer;
-  }
-  .barchart-icon-btn:hover {
-    background-color: gray;
-    cursor: pointer;
-  }
   .breadcrumb-treemap {
     font-family: "Poppins", "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -491,6 +459,81 @@ body {
     margin-block-start: 2em;
 
     text-transform: lowercase;
+  }
+  .button-wrapper {
+    display: flex;
+    gap: 0.2em;
+    background-color: transparent;
+    color: white;
+    margin-inline-end: 2em;
+    margin: 0;
+    height: 100%;
+  }
+  .treemap-icon-btn {
+    display: flex;
+    align-items: center;
+    padding-inline: 0.4em;
+    transition: background-color 0.3s ease;
+    height: 100%;
+    background-color: transparent;
+    background-color: rgb(26, 116, 131);
+  }
+  .barchart-icon-btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    background-color: rgb(26, 116, 131);
+    padding-inline: 0.4em;
+
+    transition: background-color 0.3s ease; /* Tämä on vieläkin järkevää, jos haluat taustavärin siirtymistä */
+  }
+  .treemap-icon-btn:hover .treemap-icon {
+    filter: unset;
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+  }
+  .treemap-icon-btn:hover {
+    background-color: rgb(240, 240, 240);
+  }
+  .treemap-icon {
+    width: 1.3em;
+    height: 100%;
+    margin-inline-end: -1px;
+    filter: invert(1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .barchart-icon-btn:hover {
+    background-color: rgb(
+      240,
+      240,
+      240
+    ); /* Taustaväri muuttuu napissa hover-tilassa */
+  }
+
+  .barchart-icon-btn:hover .barchart-icon {
+    cursor: pointer;
+    fill: rgb(26, 116, 131); /* Ikonin väri muuttuu hover-tilassa */
+  }
+
+  .barchart-icon {
+    width: 1.3em;
+    height: 1.3em;
+    fill: white;
+    transition: fill 0.3s ease; /* Tässä siirretään transition fill-ominaisuuteen */
+  }
+
+  .barchart-icon-btn:hover .barchart-icon {
+    cursor: pointer;
+    fill: rgb(26, 116, 131); /* Tässä vaihtuu iconin väri */
+  }
+  .year-btn-flex {
+    display: flex;
+
+    gap: 0.3em;
+    height: 2;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -714,49 +757,72 @@ body {
   }
   .button-wrapper {
     display: flex;
-
+    gap: 0.2em;
+    background-color: transparent;
+    color: white;
     margin-inline-end: 2em;
     margin: 0;
   }
-
   .treemap-icon-btn {
-    all: unset;
     padding: 0.4em 0.8em;
+    transition: background-color 0.3s ease;
 
-    border-right: #555555 1px solid;
-    border-top: #555555 1px solid;
-    border-bottom: #555555 1px solid;
-    border-top-right-radius: 0.1em;
-    border-bottom-right-radius: 1em;
+    background-color: transparent;
+    background-color: rgb(26, 116, 131);
+  }
+  .barchart-icon-btn {
+    background-color: transparent;
+    background-color: rgb(26, 116, 131);
+    padding: 0.4em 0.8em;
+    transition: background-color 0.3s ease; /* Tämä on vieläkin järkevää, jos haluat taustavärin siirtymistä */
+  }
+  .treemap-icon-btn:hover .treemap-icon {
+    filter: unset;
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+  }
+  .treemap-icon-btn:hover {
+    background-color: rgb(240, 240, 240);
   }
   .treemap-icon {
     width: 2em;
     height: 2em;
     margin-inline-end: -1px;
+    filter: invert(1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
-  .barchart-icon-btn {
-    all: unset;
-    padding: 0.4em 0.8em;
-
-    border-left: #555555 1px solid;
-    border-top: #555555 1px solid;
-    border-bottom: #555555 1px solid;
-    border-top-left-radius: 1em;
-    border-bottom-left-radius: 0.1em;
+  .barchart-icon-btn:hover {
+    background-color: rgb(
+      240,
+      240,
+      240
+    ); /* Taustaväri muuttuu napissa hover-tilassa */
   }
+
+  .barchart-icon-btn:hover .barchart-icon {
+    cursor: pointer;
+    fill: rgb(26, 116, 131); /* Ikonin väri muuttuu hover-tilassa */
+  }
+
   .barchart-icon {
     width: 2em;
     height: 2em;
+    fill: white;
+    transition: fill 0.3s ease; /* Tässä siirretään transition fill-ominaisuuteen */
   }
 
-  .treemap-icon-btn:hover {
-    background-color: gray;
+  .barchart-icon-btn:hover .barchart-icon {
     cursor: pointer;
+    fill: rgb(26, 116, 131); /* Tässä vaihtuu iconin väri */
   }
-  .barchart-icon-btn:hover {
-    background-color: gray;
-    cursor: pointer;
+  .year-btn-flex {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    height: 3.3em;
+    align-items: center;
+    justify-content: center;
   }
 }
 

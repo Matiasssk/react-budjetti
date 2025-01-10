@@ -1,0 +1,148 @@
+select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #1a7483;
+  color: white;
+  appearance: none;
+
+  transition: background-color 0.3s ease;
+  padding: 0.4em 0.8em;
+
+  height: 100%;
+  margin: 0;
+  border: none;
+}
+
+select:focus {
+  outline: none;
+  background-color: #e0e0e0;
+}
+
+option {
+  padding: 0.8em;
+  font-size: 1rem;
+  background-color: white;
+  color: #1a7483;
+  border-bottom: 1px solid #ccc;
+}
+select:hover {
+  cursor: pointer;
+  background-color: rgb(240, 240, 240);
+  color: rgb(26, 116, 131);
+}
+
+option:checked {
+  background-color: #1a7483;
+  color: white;
+}
+
+option:hover {
+  background-color: #f1f1f1;
+}
+
+select#year-select {
+  text-align: center;
+}
+@media (min-width: 400px) {
+  select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+    background-color: #1a7483;
+    color: white;
+    appearance: none;
+    transition: background-color 0.3s ease;
+    padding: 0.2em 0.4em;
+
+    height: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  select:focus {
+    outline: none;
+    background-color: #e0e0e0;
+  }
+
+  option {
+    font-size: 0.8rem;
+    background-color: white;
+    color: #1a7483;
+    border-bottom: 1px solid #ccc;
+  }
+  select:hover {
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+    color: rgb(26, 116, 131);
+  }
+
+  option:checked {
+    background-color: #1a7483;
+    color: white;
+  }
+
+  option:hover {
+    background-color: #f1f1f1;
+  }
+
+  select#year-select {
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+    background-color: #1a7483;
+    color: white;
+    appearance: none;
+
+    transition: background-color 0.3s ease;
+    padding-inline: 1.8em;
+    height: 100%;
+    margin: 0;
+    border: none;
+    font-weight: 600;
+  }
+
+  select:focus {
+    outline: none;
+    background-color: #e0e0e0;
+  }
+
+  option {
+    font-size: 1rem;
+    text-align: center;
+    align-self: center;
+    background-color: white;
+    color: #1a7483;
+    border-bottom: 1px solid #ccc;
+  }
+  select:hover {
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+    color: rgb(26, 116, 131);
+  }
+
+  option:checked {
+    background-color: #1a7483;
+    color: white;
+  }
+
+  option:hover {
+    background-color: #f1f1f1;
+  }
+
+  select#year-select {
+    text-align: center;
+  }
+}

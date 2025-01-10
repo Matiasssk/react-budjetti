@@ -1,0 +1,2876 @@
+{
+  "name": "flare",
+  "children": [
+    {
+      "name": "Menot",
+      "children": [
+        {
+          "name": "EDUSKUNTA",
+          "children": [
+            {
+              "name": "Kansanedustajat",
+              "children": [
+                {
+                  "name": "Kansanedustajien toimintamenot",
+                  "size": 22743000
+                }
+              ]
+            },
+            {
+              "name": "Eduskunnan kanslia",
+              "children": [
+                {
+                  "name": "Eduskunnan kanslian toimintamenot",
+                  "size": 61122000
+                },
+                {
+                  "name": "Arvonlisäveromenot",
+                  "size": 6200000
+                },
+                {
+                  "name": "Avustajatuki eduskuntaryhmille",
+                  "size": 6270000
+                },
+                {
+                  "name": "Tietohallinnon laitehankinnat ja kehittämishankkeet",
+                  "size": 5000000
+                }
+              ]
+            },
+            {
+              "name": "Eduskunnan oikeusasiamies",
+              "children": [
+                {
+                  "name": "Eduskunnan oikeusasiamiehen kanslian toimintamenot",
+                  "size": 8531000
+                }
+              ]
+            },
+            {
+              "name": "Ulkopoliittinen instituutti",
+              "children": [
+                {
+                  "name": "Ulkopoliittisen instituutin toimintamenot",
+                  "size": 4309000
+                },
+                {
+                  "name": "Arvonlisäveromenot",
+                  "size": 230000
+                }
+              ]
+            },
+            {
+              "name": "Valtiontalouden tarkastusvirasto",
+              "children": [
+                {
+                  "name": "Valtiontalouden tarkastusviraston toimintamenot",
+                  "size": 17062000
+                },
+                {
+                  "name": "Arvonlisäveromenot",
+                  "size": 750000
+                }
+              ]
+            },
+            {
+              "name": "Eduskunnan muut menot",
+              "children": [
+                {
+                  "name": "Eduskuntaryhmien ryhmäkanslioiden tukeminen",
+                  "size": 4880000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "TASAVALLAN PRESIDENTTI",
+          "children": [
+            {
+              "name": "Tasavallan presidentti",
+              "children": [
+                {
+                  "name": "Tasavallan presidentin palkkio",
+                  "size": 126000
+                }
+              ]
+            },
+            {
+              "name": "Tasavallan presidentin kanslia",
+              "children": [
+                {
+                  "name": "Tasavallan presidentin kanslian toimintamenot",
+                  "size": 8707000
+                },
+                {
+                  "name": "Entisten tasavallan presidenttien menot",
+                  "size": 500000
+                },
+                {
+                  "name": "Vierailuista ja kokousmatkoista aiheutuvat menot",
+                  "size": 2550000
+                },
+                {
+                  "name": "Arvonlisäveromenot",
+                  "size": 8000000
+                },
+                {
+                  "name": "Perusparannukset",
+                  "size": 20000000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VALTIONEUVOSTON KANSLIA",
+          "children": [
+            {
+              "name": "Hallinto",
+              "children": [
+                {
+                  "name": "Valtioneuvoston kanslian toimintamenot",
+                  "size": 153189000
+                },
+                {
+                  "name": "Ministereiden, heidän valtiosihteeriensä ja erityisavustajiensa palkkaukset",
+                  "size": 10366000
+                },
+                {
+                  "name": "Euroopan unionin kansallisten asiantuntijoiden palkkamenot",
+                  "size": 980000
+                },
+                {
+                  "name": "Valtioneuvoston selvitys- ja tutkimustoiminta",
+                  "size": 7759000
+                },
+                {
+                  "name": "Terveet tilat 2028",
+                  "size": 500000
+                },
+                {
+                  "name": "Saamelaisten totuus- ja sovintoprosessin edistäminen",
+                  "size": 0
+                },
+                {
+                  "name": "Kuurojen totuus- ja sovintoprosessi",
+                  "size": 438000
+                },
+                {
+                  "name": "Arvonlisäveromenot",
+                  "size": 19000000
+                }
+              ]
+            },
+            {
+              "name": "Omistajaohjaus",
+              "children": [
+                {
+                  "name": "Osakehankinnat",
+                  "size": 5700000
+                }
+              ]
+            },
+            {
+              "name": "Poliittisen toiminnan avustaminen",
+              "children": [
+                {
+                  "name": "Puoluetoiminnan tukeminen",
+                  "size": 35635000
+                }
+              ]
+            },
+            {
+              "name": "Oikeuskanslerinvirasto",
+              "children": [
+                {
+                  "name": "Oikeuskanslerinviraston toimintamenot",
+                  "size": 4365000
+                }
+              ]
+            },
+            {
+              "name": "Muut menot",
+              "children": [
+                {
+                  "name": "Kunniamerkit",
+                  "size": 700000
+                },
+                {
+                  "name": "Osallistumismaksut ja maksuosuudet Euroopan hybridiuhkien torjunnan osaamiskeskukselle",
+                  "size": 1860000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OIKEUSMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Ministeriö ja hallinto",
+              "children": [
+                {
+                  "name": "Oikeusministeriön toimintamenot",
+                  "size": 23449000
+                },
+                {
+                  "name": "Oikeusministeriön yhteydessä toimivien viranomaisten toimintamenot",
+                  "size": 13218000
+                },
+                {
+                  "name": "Oikeusrekisterikeskuksen toimintamenot",
+                  "size": 10179000
+                },
+                {
+                  "name": "Erityismenot",
+                  "size": 12013000
+                },
+                {
+                  "name": "Oikeusministeriön hallinnonalan tuottavuusmääräraha",
+                  "size": 24951000
+                },
+                {
+                  "name": "Oikeusministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 50660000
+                },
+                {
+                  "name": "Avustukset",
+                  "size": 13843000
+                },
+                {
+                  "name": "Eräät valtion maksamat korvaukset",
+                  "size": 19000000
+                },
+                {
+                  "name": "Kansainväliset jäsenmaksut ja rahoitusosuudet",
+                  "size": 450000
+                }
+              ]
+            },
+            {
+              "name": "Tuomioistuimet ja oikeusapu",
+              "children": [
+                {
+                  "name": "Korkeimman oikeuden toimintamenot",
+                  "size": 9178000
+                },
+                {
+                  "name": "Korkeimman hallinto-oikeuden toimintamenot",
+                  "size": 11828000
+                },
+                {
+                  "name": "Muiden tuomioistuinten toimintamenot",
+                  "size": 296612000
+                },
+                {
+                  "name": "Oikeusapu- ja edunvalvontapiirien ja kuluttajariitalautakunnan toimintamenot",
+                  "size": 89322000
+                },
+                {
+                  "name": "Yksityisille oikeusavustajille maksettavat korvaukset",
+                  "size": 76770000
+                }
+              ]
+            },
+            {
+              "name": "Maksuhäiriöt, ulosotto ja konkurssivalvonta",
+              "children": [
+                {
+                  "name": "Ulosottolaitoksen ja konkurssivalvonnan toimintamenot",
+                  "size": 109193000
+                },
+                {
+                  "name": "Ulosoton säilytettävänä olevien varojen korkomenot",
+                  "size": 260000
+                }
+              ]
+            },
+            {
+              "name": "Syyttäjät",
+              "children": [
+                {
+                  "name": "Syyttäjälaitoksen toimintamenot",
+                  "size": 57057000
+                }
+              ]
+            },
+            {
+              "name": "Rangaistusten täytäntöönpano",
+              "children": [
+                {
+                  "name": "Rikosseuraamuslaitoksen toimintamenot",
+                  "size": 245400000
+                },
+                {
+                  "name": "Avolaitostyöt",
+                  "size": 4700000
+                }
+              ]
+            },
+            {
+              "name": "Vaalimenot",
+              "children": [
+                {
+                  "name": "Vaalimenot",
+                  "size": 25336000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ULKOMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Ulkoasiainhallinto",
+              "children": [
+                {
+                  "name": "Ulkoasiainhallinnon toimintamenot",
+                  "size": 258506000
+                },
+                {
+                  "name": "Tiede- ja kulttuuri-instituuttikiinteistöjen menot",
+                  "size": 1005000
+                },
+                {
+                  "name": "Ulkoministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 14220000
+                },
+                {
+                  "name": "Talonrakennukset",
+                  "size": 12500000
+                }
+              ]
+            },
+            {
+              "name": "Kriisinhallinta",
+              "children": [
+                {
+                  "name": "Suomalaisten kriisinhallintajoukkojen ylläpitomenot",
+                  "size": 50680000
+                },
+                {
+                  "name": "Siviilihenkilöstön osallistuminen kriisinhallintaan",
+                  "size": 19248000
+                },
+                {
+                  "name": "Rauhanvälitys",
+                  "size": 2500000
+                }
+              ]
+            },
+            {
+              "name": "Kansainvälinen kehitysyhteistyö",
+              "children": [
+                {
+                  "name": "Valtionapu Teollisen yhteistyön rahasto Oy:lle",
+                  "size": 0
+                },
+                {
+                  "name": "Varsinainen kehitysyhteistyö",
+                  "size": 713012000
+                },
+                {
+                  "name": "Demokratia- ja oikeusvaltiotuki",
+                  "size": 3060000
+                },
+                {
+                  "name": "Finnfundin (Teollisen yhteistyön rahasto Oy) pääoman korottaminen",
+                  "size": 10000000
+                },
+                {
+                  "name": "Laina- ja investointimuotoinen kehitysyhteistyö",
+                  "size": 129730000
+                }
+              ]
+            },
+            {
+              "name": "Ulkoministeriön hallinnonalan muut menot",
+              "children": [
+                {
+                  "name": "Itämeren, Barentsin ja arktisen alueen yhteistyö",
+                  "size": 3000000
+                },
+                {
+                  "name": "Etyj-puheenjohtajuus",
+                  "size": 1569000
+                },
+                {
+                  "name": "Eräät valtionavut",
+                  "size": 2241000
+                },
+                {
+                  "name": "Hädänalaisten avustaminen",
+                  "size": 45000
+                },
+                {
+                  "name": "Eräät jäsenmaksut ja rahoitusosuudet",
+                  "size": 110110000
+                },
+                {
+                  "name": "Pääomasijoitus Instex S.A.S.:lle",
+                  "size": 300000
+                },
+                {
+                  "name": "Kurssivaihtelut",
+                  "size": 500000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SISÄMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Hallinto",
+              "children": [
+                {
+                  "name": "Sisäministeriön toimintamenot",
+                  "size": 17518000
+                },
+                {
+                  "name": "Kriisinhallintakeskuksen toimintamenot",
+                  "size": 2320000
+                },
+                {
+                  "name": "Sisäministeriön hallinnonalan kehittäminen",
+                  "size": 1342000
+                },
+                {
+                  "name": "EU:n osuus sisäisen turvallisuuden ja maahanmuuton hallintaan",
+                  "size": 0
+                },
+                {
+                  "name": "Öljy- ja kemikaalivahinkojen torjunta",
+                  "size": 5500000
+                },
+                {
+                  "name": "EU:n osuus sisäisen turvallisuuden ja maahanmuuton hallintaan ohjelmakaudella 2021&mdash;2027",
+                  "size": 42828000
+                },
+                {
+                  "name": "EU:n pelastuspalvelumekanismi CBRN-varastointi",
+                  "size": 59845000
+                },
+                {
+                  "name": "Sisäministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 180200000
+                },
+                {
+                  "name": "Eräät avustukset",
+                  "size": 480000
+                },
+                {
+                  "name": "Kansainvälisten järjestöjen jäsenmaksut ja maksuosuudet ulkomaille",
+                  "size": 960000
+                },
+                {
+                  "name": " Osakehankinnat",
+                  "size": 0
+                }
+              ]
+            },
+            {
+              "name": "Poliisitoimi",
+              "children": [
+                {
+                  "name": "Poliisitoimen toimintamenot",
+                  "size": 863666000
+                },
+                {
+                  "name": "Suojelupoliisin toimintamenot",
+                  "size": 45412000
+                },
+                {
+                  "name": "Maasta poistamis- ja noutokuljetuksista aiheutuvat menot",
+                  "size": 7668000
+                },
+                {
+                  "name": "KEJO-hankkeen yhteiset menot",
+                  "size": 6850000
+                }
+              ]
+            },
+            {
+              "name": "Rajavartiolaitos",
+              "children": [
+                {
+                  "name": "Rajavartiolaitoksen toimintamenot",
+                  "size": 305044000
+                },
+                {
+                  "name": "Rajavartiolaitoksen investoinnit",
+                  "size": 325000000
+                }
+              ]
+            },
+            {
+              "name": "Pelastustoimi ja hätäkeskustoiminta",
+              "children": [
+                {
+                  "name": "Pelastustoimen toimintamenot",
+                  "size": 4507000
+                },
+                {
+                  "name": "Hätäkeskuslaitoksen toimintamenot",
+                  "size": 70428000
+                },
+                {
+                  "name": "Pelastusopiston toimintamenot",
+                  "size": 18026000
+                },
+                {
+                  "name": "Erityismenot",
+                  "size": 8000000
+                }
+              ]
+            },
+            {
+              "name": "Maahanmuutto",
+              "children": [
+                {
+                  "name": "Maahanmuuttoviraston ja valtion vastaanottokeskusten toimintamenot",
+                  "size": 64865000
+                },
+                {
+                  "name": "Pakolaisten ja turvapaikanhakijoiden vastaanotto",
+                  "size": 371152000
+                },
+                {
+                  "name": "Vapaaehtoinen paluu",
+                  "size": 2318000
+                },
+                {
+                  "name": "Vastaanottotoiminnan asiakkaille maksettavat tuet",
+                  "size": 87158000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PUOLUSTUSMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Puolustuspolitiikka ja hallinto",
+              "children": [
+                {
+                  "name": "Puolustusministeriön toimintamenot",
+                  "size": 17461000
+                },
+                {
+                  "name": "Puolustusministeriön hallinnonalan tuottavuusmääräraha",
+                  "size": 2875000
+                },
+                {
+                  "name": "Puolustusministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 923794000
+                },
+                {
+                  "name": "Jäsenmaksut ja rahoitusosuudet",
+                  "size": 24445000
+                }
+              ]
+            },
+            {
+              "name": "Sotilaallinen maanpuolustus",
+              "children": [
+                {
+                  "name": "Puolustusvoimien toimintamenot",
+                  "size": 2118298000
+                },
+                {
+                  "name": "Puolustusmateriaalihankinnat",
+                  "size": 1580565000
+                },
+                {
+                  "name": "Monitoimihävittäjien hankinta",
+                  "size": 1405697000
+                },
+                {
+                  "name": "Maanpuolustusjärjestöjen toiminnan tukeminen",
+                  "size": 8215000
+                }
+              ]
+            },
+            {
+              "name": "Sotilaallinen kriisinhallinta",
+              "children": [
+                {
+                  "name": "Sotilaallisen kriisinhallinnan kalusto- ja hallintomenot",
+                  "size": 63988000
+                },
+                {
+                  "name": "Kurssivaihtelut",
+                  "size": 10000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "OPETUS- JA KULTTUURIMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Hallinto, kirkollisasiat ja toimialan yhteiset menot",
+              "children": [
+                {
+                  "name": "Opetus- ja kulttuuriministeriön toimintamenot",
+                  "size": 22077000
+                },
+                {
+                  "name": "Opetushallituksen toimintamenot",
+                  "size": 67576000
+                },
+                {
+                  "name": "Opetushallituksen yhteydessä toimivien viranomaisten toimintamenot",
+                  "size": 9598000
+                },
+                {
+                  "name": "Jatkuvan oppimisen ja työllisyyden palvelukeskuksen toimintamenot ",
+                  "size": 39820000
+                },
+                {
+                  "name": "Kansainvälinen yhteistyö",
+                  "size": 2337000
+                },
+                {
+                  "name": "Opetus- ja kulttuuriministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 34000000
+                },
+                {
+                  "name": "Lasten ja nuorten harrastustoiminta",
+                  "size": 14500000
+                },
+                {
+                  "name": "Eräät avustukset",
+                  "size": 1597000
+                },
+                {
+                  "name": "Avustukset kirkolliseen ja uskonnolliseen toimintaan",
+                  "size": 3807000
+                },
+                {
+                  "name": "Valtion rahoitus evankelis-luterilaisen kirkon yhteiskunnallisiin tehtäviin",
+                  "size": 122661000
+                },
+                {
+                  "name": "Jatkuvan oppimisen ja osaamisen kehittäminen",
+                  "size": 13348000
+                },
+                {
+                  "name": "Rahoitusosuudet kansainvälisille järjestöille",
+                  "size": 2246000
+                }
+              ]
+            },
+            {
+              "name": "Varhaiskasvatus, esi- ja perusopetus ja vapaa sivistystyö",
+              "children": [
+                {
+                  "name": "Valtion yleissivistävän koulutuksen toimintamenot",
+                  "size": 40066000
+                },
+                {
+                  "name": "Perusopetuksen, varhaiskasvatuksen ja vapaan sivistystyön yhteiset menot",
+                  "size": 25230000
+                },
+                {
+                  "name": "Valtionosuus ja -avustus esi- ja perusopetuksen ja varhaiskasvatuksen käyttökustannuksiin",
+                  "size": 666777000
+                },
+                {
+                  "name": " Valtionosuus ja -avustus vapaan sivistystyön oppilaitosten käyttökustannuksiin",
+                  "size": 182081000
+                },
+                {
+                  "name": "Valtionavustus järjestöille",
+                  "size": 9603000
+                }
+              ]
+            },
+            {
+              "name": "Ammatillinen koulutus ja lukiokoulutus",
+              "children": [
+                {
+                  "name": "Valtion ammatillisen koulutuksen toimintamenot",
+                  "size": 8617000
+                },
+                {
+                  "name": "Ammatillisen koulutuksen ja lukiokoulutuksen yhteiset menot",
+                  "size": 13296000
+                },
+                {
+                  "name": "Valtionosuus ja -avustus ammatilliseen koulutukseen",
+                  "size": 1043403000
+                },
+                {
+                  "name": "Valtionosuus ja -avustus lukiokoulutuksen käyttökustannuksiin",
+                  "size": 278406000
+                }
+              ]
+            },
+            {
+              "name": "Korkeakouluopetus ja tutkimus",
+              "children": [
+                {
+                  "name": "Suomen Akatemian toimintamenot",
+                  "size": 11988000
+                },
+                {
+                  "name": "Kansallisarkiston toimintamenot ",
+                  "size": 23055000
+                },
+                {
+                  "name": "Kotimaisten kielten keskuksen toimintamenot",
+                  "size": 4488000
+                },
+                {
+                  "name": "Varastokirjaston toimintamenot",
+                  "size": 2219000
+                },
+                {
+                  "name": "Korkeakoululaitoksen ja tieteen yhteiset menot",
+                  "size": 40346000
+                },
+                {
+                  "name": "Valtionrahoitus yliopistojen toimintaan",
+                  "size": 1999188000
+                },
+                {
+                  "name": "Suomen Akatemian tutkimusmäärärahat",
+                  "size": 345575000
+                },
+                {
+                  "name": "Rahapelitoiminnan tuotot tieteen edistämiseen",
+                  "size": 74715000
+                },
+                {
+                  "name": "Strateginen tutkimusrahoitus",
+                  "size": 55631000
+                },
+                {
+                  "name": "Valtionrahoitus ammattikorkeakoulujen toimintaan",
+                  "size": 954190000
+                },
+                {
+                  "name": "Rahoitusosuudet kansainvälisille järjestöille",
+                  "size": 21453000
+                },
+                {
+                  "name": "Valtion rahoitus yliopistojen pääomasijoituksiin",
+                  "size": 0
+                }
+              ]
+            },
+            {
+              "name": "Opintotuki",
+              "children": [
+                {
+                  "name": "Opintotuen muutoksenhakulautakunnan toimintamenot",
+                  "size": 651000
+                },
+                {
+                  "name": "Opintolainojen valtiontakaus",
+                  "size": 132600000
+                },
+                {
+                  "name": "Opintoraha ja asumislisä",
+                  "size": 515200000
+                },
+                {
+                  "name": "Korkeakouluopiskelijoiden ateriatuki",
+                  "size": 35564000
+                },
+                {
+                  "name": "Koulumatkatuki",
+                  "size": 67100000
+                }
+              ]
+            },
+            {
+              "name": "Taide ja kulttuuri",
+              "children": [
+                {
+                  "name": "Taiteen edistämiskeskuksen toimintamenot",
+                  "size": 4450000
+                },
+                {
+                  "name": "Suomenlinnan hoitokunnan toimintamenot",
+                  "size": 2255000
+                },
+                {
+                  "name": "Museoviraston toimintamenot",
+                  "size": 24548000
+                },
+                {
+                  "name": "Saavutettavuuskirjasto Celian toimintamenot",
+                  "size": 5590000
+                },
+                {
+                  "name": "Kansallisen audiovisuaalisen instituutin toimintamenot",
+                  "size": 7460000
+                },
+                {
+                  "name": "Ylimääräiset taiteilija- ja sanomalehtimieseläkkeet",
+                  "size": 21307000
+                },
+                {
+                  "name": "Museoviraston kulttuuri- ja nähtävyyskohteiden tilakustannukset",
+                  "size": 18502000
+                },
+                {
+                  "name": "Valtionavustukset yleisten kirjastojen toimintaan",
+                  "size": 4000000
+                },
+                {
+                  "name": "Valtionosuus ja -avustus esittävän taiteen ja museoiden käyttökustannuksiin",
+                  "size": 141111000
+                },
+                {
+                  "name": "Valtionosuus ja -avustus taiteen perusopetuksen käyttökustannuksiin",
+                  "size": 94387000
+                },
+                {
+                  "name": "Korvaus Suomenlinnan huoltoliikenteen käyttötappioon",
+                  "size": 252000
+                },
+                {
+                  "name": "Eräät käyttöoikeuskorvaukset",
+                  "size": 27648000
+                },
+                {
+                  "name": "Eräät avustukset",
+                  "size": 24764000
+                },
+                {
+                  "name": "Apurahat taiteilijoille, kirjailijoille ja kääntäjille",
+                  "size": 17256000
+                },
+                {
+                  "name": "Rahapelitoiminnan tuotot taiteen edistämiseen",
+                  "size": 180053000
+                },
+                {
+                  "name": "Valtionavustus tilakustannuksiin",
+                  "size": 26749000
+                },
+                {
+                  "name": "Digitaalisen kulttuuriperinnön saatavuus ja säilyttäminen",
+                  "size": 2200000
+                },
+                {
+                  "name": "Valtionrahoitus luovia aloja ja kulttuuritoimintaa tukevan rahaston pääomaan",
+                  "size": 0
+                },
+                {
+                  "name": "Kansallisgallerian kokoelman kartuttaminen",
+                  "size": 839000
+                },
+                {
+                  "name": "Toimitilojen ja kiinteistövarallisuuden perusparannukset ja kunnossapito",
+                  "size": 4049000
+                },
+                {
+                  "name": "Rahoitus Suomen arkkitehtuuri- ja designmuseosäätiölle ja kiinteistöosakeyhtiölle",
+                  "size": 2000000
+                },
+                {
+                  "name": "Kulttuuriympäristön suojelusta aiheutuvat menot",
+                  "size": 40000
+                }
+              ]
+            },
+            {
+              "name": "Liikuntatoimi",
+              "children": [
+                {
+                  "name": "Rahapelitoiminnan tuotot  urheilun ja liikuntakasvatuksen edistämiseen",
+                  "size": 115404000
+                },
+                {
+                  "name": "Valtionosuudet kunnille ja liikunnan koulutuskeskuksille",
+                  "size": 33798000
+                },
+                {
+                  "name": "Liikunnan ja huippu-urheilun edistäminen",
+                  "size": 6000000
+                }
+              ]
+            },
+            {
+              "name": "Nuorisotyö",
+              "children": [
+                {
+                  "name": "Rahapelitoiminnan tuotot  nuorisotyön edistämiseen",
+                  "size": 41530000
+                },
+                {
+                  "name": "Nuorten työpajatoiminta ja etsivä nuorisotyö",
+                  "size": 22452000
+                },
+                {
+                  "name": "Valtionosuudet kuntien nuorisotoimeen ja eräät avustukset",
+                  "size": 13780000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VALTIOVARAINMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Hallinto",
+              "children": [
+                {
+                  "name": "Valtiovarainministeriön toimintamenot",
+                  "size": 35579000
+                },
+                {
+                  "name": "Valtion kiinteistöstrategian toteuttaminen ja hallinnonalan omistajaohjaus",
+                  "size": 345000
+                },
+                {
+                  "name": "Valtiovarainministeriön hallinnonalan tuottavuusmääräraha",
+                  "size": 3306000
+                },
+                {
+                  "name": "Metallirahamenot",
+                  "size": 5460000
+                },
+                {
+                  "name": "Valtiovarainministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 155000000
+                },
+                {
+                  "name": "Elpymis- ja palautumissuunnitelman rahoitus työkykyhankkeeseen",
+                  "size": 1500000
+                },
+                {
+                  "name": "Kansainvälisten järjestöjen jäsenmaksut ja rahoitusosuudet",
+                  "size": 1200000
+                },
+                {
+                  "name": "Suomen Pankin eräiden sijoitustuottojen siirto Kreikan valtiolle",
+                  "size": 2320000
+                }
+              ]
+            },
+            {
+              "name": "Verotus ja tulli",
+              "children": [
+                {
+                  "name": "Verohallinnon toimintamenot",
+                  "size": 397079000
+                },
+                {
+                  "name": "Tullin toimintamenot",
+                  "size": 193593000
+                },
+                {
+                  "name": "Kansallisen tulorekisterin toimintamenot",
+                  "size": 36808000
+                },
+                {
+                  "name": "Takaisin maksetut verot",
+                  "size": 2000000
+                },
+                {
+                  "name": "Verotukseen liittyvät korkomenot",
+                  "size": 18500000
+                },
+                {
+                  "name": "Autoveron vientipalautus",
+                  "size": 10000000
+                }
+              ]
+            },
+            {
+              "name": "Palvelut valtioyhteisölle",
+              "children": [
+                {
+                  "name": "Valtiokonttorin toimintamenot",
+                  "size": 36579000
+                },
+                {
+                  "name": "Keskitettyjen valuuttatilien kurssierot",
+                  "size": 600000
+                },
+                {
+                  "name": "Huoltovarmuuspankin palvelumaksu",
+                  "size": 1700000
+                },
+                {
+                  "name": "Valtion talous- ja henkilöstöhallinnon palvelukeskuksen toimintamenot",
+                  "size": 2000000
+                },
+                {
+                  "name": "Valtion tieto- ja viestintätekniikkakeskuksen toimintamenot ",
+                  "size": 5000000
+                },
+                {
+                  "name": "Valtion tieto- ja viestintätekniikkakeskuksen investointimenot ",
+                  "size": 15000000
+                },
+                {
+                  "name": "Verkkomaksaminen",
+                  "size": 500000
+                },
+                {
+                  "name": "Senaatti-konsernin liikelaitokset",
+                  "size": 0
+                }
+              ]
+            },
+            {
+              "name": "Tilastotoimi, taloudellinen tutkimus ja rekisterihallinto",
+              "children": [
+                {
+                  "name": "Tilastokeskuksen toimintamenot",
+                  "size": 52607000
+                },
+                {
+                  "name": "Valtion taloudellisen tutkimuskeskuksen toimintamenot",
+                  "size": 4403000
+                },
+                {
+                  "name": "Digi- ja väestötietoviraston toimintamenot",
+                  "size": 62731000
+                },
+                {
+                  "name": "Sähköinen tunnistautuminen",
+                  "size": 8000000
+                }
+              ]
+            },
+            {
+              "name": "Valtion alue- ja paikallishallinto",
+              "children": [
+                {
+                  "name": "Aluehallintoviraston toimintamenot",
+                  "size": 69511000
+                },
+                {
+                  "name": "Palvelurakenteiden ja valtion hallintorakenteiden kehittäminen ",
+                  "size": 2018000
+                }
+              ]
+            },
+            {
+              "name": "Eläkkeet ja korvaukset",
+              "children": [
+                {
+                  "name": "Eläkkeet",
+                  "size": 5354542000
+                },
+                {
+                  "name": "Ylimääräiset eläkkeet ja muut eläkemenot",
+                  "size": 3049000
+                },
+                {
+                  "name": "Vahingonkorvaukset",
+                  "size": 39440000
+                },
+                {
+                  "name": "Muiden eläkelaitosten vastattavaksi kuuluvat eläkemenot",
+                  "size": 317840000
+                },
+                {
+                  "name": "Muiden eläkelaitosten valtion puolesta maksamien eläkemenojen ja valtiolle maksamien ennakoiden korkomenot",
+                  "size": 19194000
+                }
+              ]
+            },
+            {
+              "name": "Valtionhallinnon yhteiset henkilöstömenot",
+              "children": [
+                {
+                  "name": "Erikseen budjetoidut henkilöstömenot",
+                  "size": 2500000
+                },
+                {
+                  "name": "Työturvallisuuden edistäminen",
+                  "size": 980000
+                },
+                {
+                  "name": "Osaamisen kehittäminen",
+                  "size": 15000000
+                }
+              ]
+            },
+            {
+              "name": "Valtionhallinnon kehittäminen",
+              "children": [
+                {
+                  "name": "Julkisen hallinnon ICT:n ohjaus ja kehittäminen",
+                  "size": 13933000
+                },
+                {
+                  "name": "Valtion talous-, henkilöstö- ja toimitilahallinnon tietojärjestelmät",
+                  "size": 8600000
+                },
+                {
+                  "name": "Sosiaali- ja terveydenhuollon  sekä pelastustoimen uudistuksen valmistelun ja toimeenpanon tuki ja ohjaus",
+                  "size": 5100000
+                },
+                {
+                  "name": "Eräät Pohjois-Atlantin puolustusliitto NATO:n  jäsenyydestä aiheutuvat menot",
+                  "size": 15000000
+                },
+                {
+                  "name": "Tuottavuuden edistäminen",
+                  "size": 1231000
+                },
+                {
+                  "name": "Valtionavustustoiminnan kehittämis- ja digitalisointihanke",
+                  "size": 1091000
+                },
+                {
+                  "name": "Turvallisuusviranomaisten viestintäverkot",
+                  "size": 21200000
+                }
+              ]
+            },
+            {
+              "name": "Siirrot Ahvenanmaan maakunnalle",
+              "children": [
+                {
+                  "name": "Ahvenanmaan tasoitusmaksu",
+                  "size": 202494000
+                },
+                {
+                  "name": "Verohyvitys Ahvenanmaan maakunnalle",
+                  "size": 0
+                },
+                {
+                  "name": "Ahvenanmaan verotasoitus",
+                  "size": 96000000
+                },
+                {
+                  "name": "Elpymis- ja palautumisvälineen rahoitus Ahvenanmaan maakunnalle",
+                  "size": 0
+                }
+              ]
+            },
+            {
+              "name": "Hyvinvointialueiden ja HUS-yhtymän rahoitus",
+              "children": [
+                {
+                  "name": "Hyvinvointialueiden ja HUS-yhtymän sekä Helsingin kaupungin eräiden tehtävien rahoitus",
+                  "size": 0
+                },
+                {
+                  "name": "Hyvinvointialueiden ja HUS-yhtymän sosiaali- ja terveydenhuollon sekä pelastustoimen rahoitus",
+                  "size": 20634122000
+                },
+                {
+                  "name": "Hyvinvointialueiden lisärahoitus",
+                  "size": 1000000
+                }
+              ]
+            },
+            {
+              "name": "Kuntien tukeminen",
+              "children": [
+                {
+                  "name": "Valtionosuus kunnille peruspalvelujen järjestämiseen",
+                  "size": 2751900000
+                },
+                {
+                  "name": "Kuntien yhdistymisen taloudellinen tuki",
+                  "size": 11400000
+                },
+                {
+                  "name": "Valtionavustus kuntien kannustinjärjestelmiin",
+                  "size": 0
+                },
+                {
+                  "name": "Valtion korvaus kunnille veroperustemuutoksista aiheutuvista verotulojen menetyksistä",
+                  "size": 851000000
+                }
+              ]
+            },
+            {
+              "name": "Työllisyyden ja elinkeinoelämän tukeminen",
+              "children": [
+                {
+                  "name": "Energiaverotuki",
+                  "size": 82000000
+                },
+                {
+                  "name": "Lainat ja takaukset sähkön johdannaismarkkinoilla toimiville yhteisöille",
+                  "size": 0
+                }
+              ]
+            },
+            {
+              "name": "EU ja kansainväliset järjestöt",
+              "children": [
+                {
+                  "name": "Rahoitusvakausviraston toimintamenot",
+                  "size": 6135000
+                },
+                {
+                  "name": "Euroopan unionin osallistuminen matkamenojen korvauksiin",
+                  "size": 1000000
+                },
+                {
+                  "name": "Isäntämaakorvaus Pohjoismaiden Investointipankille",
+                  "size": 13256000
+                },
+                {
+                  "name": "Kansainvälisille rahoituslaitoksille annettujen sitoumusten lunastaminen",
+                  "size": 170000
+                },
+                {
+                  "name": "Suomen osuus Kansainvälisen jälleenrakennus- ja kehityspankin sekä Kansainvälisen rahoitusyhtiön peruspääoman korottamisesta",
+                  "size": 14600000
+                },
+                {
+                  "name": "Maksut Euroopan unionille",
+                  "size": 2498000000
+                },
+                {
+                  "name": "Valtion takaus- ja takuusuoritukset",
+                  "size": 28630000
+                }
+              ]
+            },
+            {
+              "name": "Erikseen budjetoidut valtionhallinnon menot",
+              "children": [
+                {
+                  "name": "Satunnaiset säädösperusteiset menot",
+                  "size": 300000
+                },
+                {
+                  "name": "Ennakoimattomat menot",
+                  "size": 2000000
+                },
+                {
+                  "name": "Valtion saatavien turvaaminen",
+                  "size": 250000
+                },
+                {
+                  "name": "Kassasijoitusten riskienhallinta",
+                  "size": 8300000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MAA- JA METSÄTALOUSMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Hallinto ja tutkimus",
+              "children": [
+                {
+                  "name": "Maa- ja metsätalousministeriön toimintamenot",
+                  "size": 23744000
+                },
+                {
+                  "name": "Luonnonvarakeskuksen toimintamenot",
+                  "size": 79752000
+                },
+                {
+                  "name": "Tutkimus ja kehittäminen",
+                  "size": 1943000
+                },
+                {
+                  "name": "Hallinnolliset järjestelyt",
+                  "size": 0
+                },
+                {
+                  "name": "Maa- ja metsätalousministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 30652000
+                },
+                {
+                  "name": "Eräät jäsenmaksut ja rahoitusosuudet",
+                  "size": 4439000
+                }
+              ]
+            },
+            {
+              "name": "Maaseudun kehittäminen",
+              "children": [
+                {
+                  "name": "Maatalouden aloittamis- ja investointiavustukset",
+                  "size": 139500000
+                },
+                {
+                  "name": "Maaseutuelinkeinotoiminnan korkotuki",
+                  "size": 15000000
+                },
+                {
+                  "name": "Luopumistuet ja -eläkkeet",
+                  "size": 21800000
+                },
+                {
+                  "name": "Eläinten hyvinvointikorvaukset ",
+                  "size": 74000000
+                },
+                {
+                  "name": "Valtionapu maaseudun elinkeinojen kehittämiseen",
+                  "size": 5616000
+                },
+                {
+                  "name": "Porotalouden edistäminen",
+                  "size": 2143000
+                },
+                {
+                  "name": "Rahapelitoiminnan tuotolla rahoitettava hevoskasvatuksen ja  hevosurheilun edistäminen",
+                  "size": 39192000
+                },
+                {
+                  "name": "Valtionapu 4H-toimintaan",
+                  "size": 4155000
+                },
+                {
+                  "name": "Maaseudun kehittäminen",
+                  "size": 4300000
+                },
+                {
+                  "name": "EU:n ja valtion rahoitusosuus alueelliseen ja paikalliseen maaseudun kehittämiseen",
+                  "size": 139016000
+                }
+              ]
+            },
+            {
+              "name": "Maa- ja elintarviketalous",
+              "children": [
+                {
+                  "name": "Ruokaviraston toimintamenot",
+                  "size": 78958000
+                },
+                {
+                  "name": "Eläinlääkintähuolto ja kasvintuhoojien torjunta",
+                  "size": 7929000
+                },
+                {
+                  "name": "Maa- ja puutarhatalouden kansallinen tuki",
+                  "size": 350000000
+                },
+                {
+                  "name": "EU-tulotuki ja EU-markkinatuki",
+                  "size": 520600000
+                },
+                {
+                  "name": "Turvepeltojen ilmastotoimet",
+                  "size": 30000000
+                },
+                {
+                  "name": "Ympäristökorvaukset, luonnonmukainen tuotanto, neuvonta ja ei-tuotannolliset investoinnit",
+                  "size": 286560000
+                },
+                {
+                  "name": "Luonnonhaittakorvaukset",
+                  "size": 495884000
+                },
+                {
+                  "name": "EU-rahoitteinen ruokaketjun kehittäminen",
+                  "size": 11030000
+                },
+                {
+                  "name": "Ruokaketjun kehittäminen",
+                  "size": 2637000
+                },
+                {
+                  "name": "Peltorakenteen kehittäminen",
+                  "size": 0
+                },
+                {
+                  "name": "Ravinnekierrätyksen edistäminen biokaasutuotannolla",
+                  "size": 4000000
+                },
+                {
+                  "name": "Siirto interventiorahastoon",
+                  "size": 400000
+                },
+                {
+                  "name": "Eräät valtionavut",
+                  "size": 6467000
+                }
+              ]
+            },
+            {
+              "name": "Luonnonvaratalous",
+              "children": [
+                {
+                  "name": "Kalakannan hoitovelvoitteet",
+                  "size": 2800000
+                },
+                {
+                  "name": "Vesivarojen käytön ja hoidon menot",
+                  "size": 15847000
+                },
+                {
+                  "name": "Luonnonvara- ja biotalouden edistäminen",
+                  "size": 14966000
+                },
+                {
+                  "name": "Vesi- ja kalataloushankkeiden tukeminen",
+                  "size": 8736000
+                },
+                {
+                  "name": "Eräät luonnonvaratalouden korvaukset",
+                  "size": 1632000
+                },
+                {
+                  "name": "Hirvieläinten aiheuttamien vahinkojen korvaaminen",
+                  "size": 4760000
+                },
+                {
+                  "name": "Petoeläinten aiheuttamien vahinkojen korvaaminen",
+                  "size": 8850000
+                },
+                {
+                  "name": "Tuki puuntuotannon kestävyyden turvaamiseen",
+                  "size": 47497000
+                },
+                {
+                  "name": "Metsäluonnon hoidon edistäminen",
+                  "size": 17500000
+                },
+                {
+                  "name": "Valtionapu Suomen metsäkeskukselle",
+                  "size": 45069000
+                },
+                {
+                  "name": "Tuki joutoalueiden metsitykseen",
+                  "size": 5400000
+                },
+                {
+                  "name": "Riistatalouden edistäminen",
+                  "size": 13059000
+                },
+                {
+                  "name": "Kalatalouden edistäminen",
+                  "size": 10975000
+                },
+                {
+                  "name": "Eräät luonnonvaratalouden valtionavut",
+                  "size": 1132000
+                },
+                {
+                  "name": "Elinkeinokalatalouden edistäminen",
+                  "size": 30414000
+                }
+              ]
+            },
+            {
+              "name": "Metsähallitus",
+              "children": [
+                {
+                  "name": "Metsähallituksen eräät julkiset hallintotehtävät",
+                  "size": 8610000
+                }
+              ]
+            },
+            {
+              "name": "Maanmittaus ja asunto-osakkeiden kirjaaminen",
+              "children": [
+                {
+                  "name": "Maanmittauslaitoksen toimintamenot",
+                  "size": 46184000
+                },
+                {
+                  "name": "Kiinteistötoimitusten tukemisesta aiheutuvat menot",
+                  "size": 2000000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TYÖ- JA ELINKEINOMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Hallinto",
+              "children": [
+                {
+                  "name": "Työ- ja elinkeinoministeriön toimintamenot",
+                  "size": 36830000
+                },
+                {
+                  "name": "Elinkeino-, liikenne- ja ympäristökeskusten toimintamenot",
+                  "size": 209985000
+                },
+                {
+                  "name": "Työ- ja elinkeinotoimistojen toimintamenot",
+                  "size": 278769000
+                },
+                {
+                  "name": "Geologian tutkimuskeskuksen toimintamenot",
+                  "size": 31641000
+                },
+                {
+                  "name": "Innovaatiorahoituskeskus Business Finlandin toimintamenot",
+                  "size": 102347000
+                },
+                {
+                  "name": "Kilpailu- ja kuluttajaviraston toimintamenot",
+                  "size": 19300000
+                },
+                {
+                  "name": "Patentti- ja rekisterihallituksen toimintamenot",
+                  "size": 10961000
+                },
+                {
+                  "name": "Turvallisuus- ja kemikaaliviraston toimintamenot",
+                  "size": 22760000
+                },
+                {
+                  "name": "Energiaviraston toimintamenot",
+                  "size": 9133000
+                },
+                {
+                  "name": "Digitalisaation kehittäminen",
+                  "size": 40500000
+                },
+                {
+                  "name": "Siviilipalvelus",
+                  "size": 6139000
+                },
+                {
+                  "name": "Työ- ja elinkeinoministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 62072000
+                },
+                {
+                  "name": "Valtionavustus kestävää kasvupolitiikkaa edistäville toimijoille",
+                  "size": 4421000
+                },
+                {
+                  "name": "Erityisavustus Teknologian tutkimuskeskus VTT Oy:n tutkimusinfrastruktuuriin",
+                  "size": 6950000
+                },
+                {
+                  "name": "Valtionavustus Teknologian tutkimuskeskus VTT Oy:n toimintaan",
+                  "size": 97020000
+                },
+                {
+                  "name": "Valtionavustus kuluttajajärjestölle",
+                  "size": 1472000
+                },
+                {
+                  "name": "Valtion osuus merimiespalvelutoiminnasta",
+                  "size": 2572000
+                },
+                {
+                  "name": "Matkustajien paluukuljetukset ja korvaukset",
+                  "size": 400000
+                },
+                {
+                  "name": "Korvaukset matkustajille matkapakettien peruuntumisesta",
+                  "size": 0
+                },
+                {
+                  "name": "Kansainvälisten järjestöjen jäsenmaksut ja rahoitusosuudet",
+                  "size": 18590000
+                },
+                {
+                  "name": "Eräät oikeudenkäyntikulut ja korvaukset",
+                  "size": 50000
+                }
+              ]
+            },
+            {
+              "name": "Uudistuminen ja vähähiilisyys",
+              "children": [
+                {
+                  "name": "Energiatehokkuuden ja uusiutuvan energian käytön edistäminen",
+                  "size": 4400000
+                },
+                {
+                  "name": "Tutkimus-, kehittämis- ja innovaatiotoiminnan tukeminen",
+                  "size": 465488000
+                },
+                {
+                  "name": "Energiatuki",
+                  "size": 364090000
+                },
+                {
+                  "name": "Energiaintensiivisen teollisuuden sähköistämistuki",
+                  "size": 150000000
+                },
+                {
+                  "name": "LNG-terminaalien investointituki",
+                  "size": 0
+                },
+                {
+                  "name": "Laivanrakennuksen innovaatiotuki",
+                  "size": 25343000
+                },
+                {
+                  "name": "Julkisen liikennesähkön ja -kaasun lataus- ja tankkausinfrastruktuurin edistäminen",
+                  "size": 21500000
+                },
+                {
+                  "name": "Uusiutuvan energian tuotantotuki",
+                  "size": 135406000
+                },
+                {
+                  "name": "Lainat tutkimus- ja innovaatiotoimintaan",
+                  "size": 157160000
+                },
+                {
+                  "name": "Pääomalainat teollisuuden uudistumiseen ja yritysvetoisten liiketoimintaekosysteemien kehittämiseen",
+                  "size": 8250000
+                },
+                {
+                  "name": "Pääomasijoitus Ilmastorahasto Oy:lle",
+                  "size": 100000000
+                },
+                {
+                  "name": "Pääomasijoitus Lääkekehityskeskus Oy:lle",
+                  "size": 20000000
+                }
+              ]
+            },
+            {
+              "name": "Työllisyys ja yrittäjyys",
+              "children": [
+                {
+                  "name": "Valtionavustus kunnille Ohjaamoiden monialaisuuden vahvistamiseen",
+                  "size": 0
+                },
+                {
+                  "name": "Turveyrittäjien avustaminen",
+                  "size": 30585000
+                },
+                {
+                  "name": "Alueiden kestävän kasvun ja elinvoiman tukeminen",
+                  "size": 8700000
+                },
+                {
+                  "name": "Valtionavustus Työkanava Oy:n toimintaan",
+                  "size": 10000000
+                },
+                {
+                  "name": "Yritysten kehittämishankkeiden tukeminen",
+                  "size": 25030000
+                },
+                {
+                  "name": "Alueellinen kuljetustuki",
+                  "size": 6300000
+                },
+                {
+                  "name": "Valtionavustus turvetuotantokoneiden romutukseen",
+                  "size": 0
+                },
+                {
+                  "name": "Julkiset työvoima- ja yrityspalvelut",
+                  "size": 220912000
+                },
+                {
+                  "name": "Palkkaturva",
+                  "size": 33460000
+                },
+                {
+                  "name": "Toimet työurien pidentämiseksi",
+                  "size": 22000000
+                },
+                {
+                  "name": "EU:n ja valtion rahoitusosuus EU:n alue- ja rakennepolitiikan ja muihin koheesiopolitiikan ohjelmiin",
+                  "size": 613316000
+                },
+                {
+                  "name": "Pääomasijoitus Työkanava Oy:lle",
+                  "size": 7000000
+                },
+                {
+                  "name": "Vaikuttavuusinvestointien tuotonmaksu ",
+                  "size": 8000000
+                }
+              ]
+            },
+            {
+              "name": "Yritysten erityisrahoitus",
+              "children": [
+                {
+                  "name": "Avustus digitaaliseen lentopaikkatoimintaan",
+                  "size": 0
+                },
+                {
+                  "name": "Valtiontuki sähköhuollon varmistamiseksi",
+                  "size": 1200000
+                },
+                {
+                  "name": "Tapahtumatakuu",
+                  "size": 0
+                },
+                {
+                  "name": "Yöjunarungon vaunukaluston hankinta",
+                  "size": 490000
+                },
+                {
+                  "name": "Finnvera Oyj:n tappiokorvaukset",
+                  "size": 65071000
+                },
+                {
+                  "name": "Korko- ja muu tuki julkisesti tuetuille vienti- ja alusluotoille",
+                  "size": 42400000
+                },
+                {
+                  "name": "Siirrot hallinnonalan rahastoihin",
+                  "size": 20000
+                },
+                {
+                  "name": "Lainat Finnvera Oyj:n varainhankintaan",
+                  "size": 10000
+                },
+                {
+                  "name": "Pääomasijoitus Business Finland Venture Capital Oy:lle",
+                  "size": 110000000
+                },
+                {
+                  "name": "Tuotonvaihtosopimus- ja suojausmenot",
+                  "size": 73000
+                }
+              ]
+            },
+            {
+              "name": "Kotoutuminen ja kansainvälinen osaaminen",
+              "children": [
+                {
+                  "name": "Kotoutumisen ja työvoiman maahanmuuton edistäminen",
+                  "size": 7241000
+                },
+                {
+                  "name": "Valtion korvaukset kotoutumisen edistämisestä",
+                  "size": 287012000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LIIKENNE- JA VIESTINTÄMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Hallinto ja toimialan yhteiset menot",
+              "children": [
+                {
+                  "name": "Liikenne- ja viestintäministeriön toimintamenot",
+                  "size": 20448000
+                },
+                {
+                  "name": "Liikenne- ja viestintäviraston toimintamenot",
+                  "size": 102894000
+                },
+                {
+                  "name": "Väyläviraston toimintamenot",
+                  "size": 58442000
+                },
+                {
+                  "name": "Ilmatieteen laitoksen toimintamenot",
+                  "size": 45198000
+                },
+                {
+                  "name": "Liikenne- ja viestintäministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 431250000
+                }
+              ]
+            },
+            {
+              "name": "Liikenne- ja viestintäverkot",
+              "children": [
+                {
+                  "name": "Perusväylänpito",
+                  "size": 1314806000
+                },
+                {
+                  "name": "Avustukset liikenne- ja viestintäverkkoihin",
+                  "size": 24530000
+                },
+                {
+                  "name": "Eräät avustukset",
+                  "size": 27650000
+                },
+                {
+                  "name": "Maa- ja vesialueiden hankinnat ja korvaukset",
+                  "size": 34997000
+                },
+                {
+                  "name": "Väyläverkon kehittäminen",
+                  "size": 414700000
+                },
+                {
+                  "name": "Elinkaarirahoitushankkeet",
+                  "size": 108000000
+                }
+              ]
+            },
+            {
+              "name": "Liikenteen ja viestinnän palvelut",
+              "children": [
+                {
+                  "name": "Saaristo- ja yhteysalusliikenteen ostot ja kehittäminen",
+                  "size": 17886000
+                },
+                {
+                  "name": "Meriliikenteessä käytettävien alusten kilpailukyvyn parantaminen",
+                  "size": 89000000
+                },
+                {
+                  "name": "Valtionavustus valtakunnallisen laajakaistahankkeen toteuttamiseen",
+                  "size": 16950000
+                },
+                {
+                  "name": "Avustukset liikenteen ja viestinnän palveluihin",
+                  "size": 28141000
+                },
+                {
+                  "name": "Julkisen henkilöliikenteen palvelujen ostot ja kehittäminen",
+                  "size": 101724000
+                },
+                {
+                  "name": "Siirto valtion televisio- ja radiorahastoon",
+                  "size": 575802000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "YMPÄRISTÖMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Ympäristöhallinnon toimintamenot",
+              "children": [
+                {
+                  "name": "Ympäristöministeriön toimintamenot",
+                  "size": 31376000
+                },
+                {
+                  "name": "Suomen ympäristökeskuksen toimintamenot",
+                  "size": 25896000
+                },
+                {
+                  "name": "Ympäristöministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 12435000
+                },
+                {
+                  "name": "Avustukset järjestöille ja ympäristönhoitoon",
+                  "size": 3298000
+                }
+              ]
+            },
+            {
+              "name": "Ympäristön- ja luonnonsuojelu",
+              "children": [
+                {
+                  "name": "Ympäristövahinkojen ehkäiseminen ja jälkihoito",
+                  "size": 5620000
+                },
+                {
+                  "name": "Eräät luonnonsuojelun menot",
+                  "size": 12790000
+                },
+                {
+                  "name": "Eräät ympäristömenot",
+                  "size": 11615000
+                },
+                {
+                  "name": "Itämeren ja vesien suojelun edistäminen",
+                  "size": 12635000
+                },
+                {
+                  "name": "Avustukset kuntien ilmastosuunnitelmiin",
+                  "size": 2631000
+                },
+                {
+                  "name": "Metsähallituksen julkiset hallintotehtävät",
+                  "size": 50737000
+                },
+                {
+                  "name": "Siirto Öljysuojarahastoon",
+                  "size": 4000000
+                },
+                {
+                  "name": "Vesien- ja ympäristönhoidon tukeminen",
+                  "size": 47892000
+                },
+                {
+                  "name": "Luonnonsuojelualueiden hankinta- ja korvausmenot",
+                  "size": 46630000
+                },
+                {
+                  "name": "Kansainvälisen yhteistyön jäsenmaksut ja rahoitusosuudet",
+                  "size": 2162000
+                }
+              ]
+            },
+            {
+              "name": "Yhdyskunnat, rakentaminen ja asuminen",
+              "children": [
+                {
+                  "name": "Asumisen rahoitus- ja kehittämiskeskuksen toimintamenot",
+                  "size": 7501000
+                },
+                {
+                  "name": "Rakennetun ympäristön digitaalisen rekisterin ja alustan luominen  ",
+                  "size": 2300000
+                },
+                {
+                  "name": "Vähähiilisen rakennetun ympäristön ohjelma",
+                  "size": 2000000
+                },
+                {
+                  "name": "Asumisneuvonnan kehittäminen ja laajentaminen",
+                  "size": 4000000
+                },
+                {
+                  "name": "Avustukset asunnottomuuden poistamiseksi ja asunnottomuuden tilastoinnin kehittäminen",
+                  "size": 0
+                },
+                {
+                  "name": "Avustukset kuntien kiinteistöjen öljylämmityksestä luopumiseen ",
+                  "size": 10860000
+                },
+                {
+                  "name": "Avustukset vihreää siirtymää tukevan rakentamisen toteuttamiseen",
+                  "size": 2500000
+                },
+                {
+                  "name": "Avustukset asuinrakennusten sähköisen liikenteen infrastruktuurin edistämiseen",
+                  "size": 9000000
+                },
+                {
+                  "name": "Avustukset työpaikkakiinteistöjen sähköisen liikenteen infrastruktuurin edistämiseen",
+                  "size": 1000000
+                },
+                {
+                  "name": "Avustukset korjaustoimintaan",
+                  "size": 450000
+                },
+                {
+                  "name": "Avustukset asuinrakennusten öljy- ja kaasulämmityksestä luopumiseksi",
+                  "size": 45600000
+                },
+                {
+                  "name": "Siirto Valtion asuntorahastoon",
+                  "size": 0
+                },
+                {
+                  "name": "Avustukset rakennusperinnön hoitoon",
+                  "size": 1700000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SOSIAALI- JA TERVEYSMINISTERIÖN HALLINNONALA",
+          "children": [
+            {
+              "name": "Hallinto",
+              "children": [
+                {
+                  "name": "Sosiaali- ja terveysministeriön toimintamenot",
+                  "size": 32923000
+                },
+                {
+                  "name": "Valtion mielisairaaloiden toimintamenot",
+                  "size": 966000
+                },
+                {
+                  "name": "Terveyden ja hyvinvoinnin laitoksen alaisten lastensuojeluyksiköiden toimintamenot",
+                  "size": 2810000
+                },
+                {
+                  "name": "Terveyden ja hyvinvoinnin laitoksen alaisen vankiterveydenhuollon yksikön toimintamenot",
+                  "size": 19509000
+                },
+                {
+                  "name": "Sosiaaliturva-asioiden muutoksenhakulautakunnan toimintamenot",
+                  "size": 8888000
+                },
+                {
+                  "name": "Vankiterveydenhuollon yksikön ulkopuoliset terveyspalvelut",
+                  "size": 2800000
+                },
+                {
+                  "name": "Sosiaali- ja terveydenhuollon valtakunnallinen tiedonhallinta ",
+                  "size": 39800000
+                },
+                {
+                  "name": "Sosiaali- ja terveysministeriön hallinnonalan arvonlisäveromenot",
+                  "size": 22000000
+                },
+                {
+                  "name": "Kansainväliset jäsenmaksut ja maksuosuudet",
+                  "size": 5596000
+                }
+              ]
+            },
+            {
+              "name": "Valvonta",
+              "children": [
+                {
+                  "name": "Säteilyturvakeskuksen toimintamenot",
+                  "size": 19284000
+                },
+                {
+                  "name": "Sosiaali- ja terveysalan lupa- ja valvontaviraston toimintamenot",
+                  "size": 15868000
+                },
+                {
+                  "name": "Lääkealan turvallisuus- ja kehittämiskeskuksen toimintamenot",
+                  "size": 4798000
+                },
+                {
+                  "name": "Työsuojelun aluehallintoviranomaisten toimintamenot",
+                  "size": 28220000
+                },
+                {
+                  "name": "Sosiaali- ja terveydenhuollon tietolupaviranomaisen toimintamenot ",
+                  "size": 2200000
+                },
+                {
+                  "name": "Lääkeasioiden tiekartan toimeenpano",
+                  "size": 1000000
+                },
+                {
+                  "name": "Oikeuslääketieteellisen kuolemansyyn selvittämisen menot",
+                  "size": 12041000
+                }
+              ]
+            },
+            {
+              "name": "Tutkimus- ja kehittämistoiminta",
+              "children": [
+                {
+                  "name": "Terveyden ja hyvinvoinnin laitoksen toimintamenot",
+                  "size": 77278000
+                },
+                {
+                  "name": "Kansalliset osaamiskeskittymät",
+                  "size": 0
+                },
+                {
+                  "name": "Hyvinvoinnin ja terveyden edistäminen",
+                  "size": 0
+                },
+                {
+                  "name": "Valtionosuus Työterveyslaitoksen toimintaan",
+                  "size": 23042000
+                },
+                {
+                  "name": "Eräät erityishankkeet",
+                  "size": 6937000
+                }
+              ]
+            },
+            {
+              "name": "Perhe- ja asumiskustannusten tasaus, perustoimeentulotuki ja eräät palvelut",
+              "children": [
+                {
+                  "name": "Perhe-etuudet",
+                  "size": 1611300000
+                },
+                {
+                  "name": "Sotilasavustus",
+                  "size": 20200000
+                },
+                {
+                  "name": "Asumistuki",
+                  "size": 1759200000
+                },
+                {
+                  "name": "Vammaisten henkilöiden tulkkauspalvelut",
+                  "size": 58500000
+                },
+                {
+                  "name": "Perustoimeentulotuki",
+                  "size": 702600000
+                },
+                {
+                  "name": "Kansaneläkelaitoksen sosiaaliturvarahastojen toimintakulut",
+                  "size": 513100000
+                }
+              ]
+            },
+            {
+              "name": "Työttömyysturva",
+              "children": [
+                {
+                  "name": "Valtion korvaus hyvinvointialueille kuntouttavan työtoiminnan järjestämisestä",
+                  "size": 30484000
+                },
+                {
+                  "name": "Valtionosuus työttömyysetuuksien ansioturvasta ja vuorottelukorvauksesta",
+                  "size": 919960000
+                },
+                {
+                  "name": "Valtionosuus työttömyysetuuksien perusturvasta",
+                  "size": 1451900000
+                },
+                {
+                  "name": "Valtionosuudet Työllisyysrahastolle",
+                  "size": 3500000
+                }
+              ]
+            },
+            {
+              "name": "Sairausvakuutus",
+              "children": [
+                {
+                  "name": "Valtion osuus sairausvakuutuslaista johtuvista menoista",
+                  "size": 2292700000
+                }
+              ]
+            },
+            {
+              "name": "Eläkkeet",
+              "children": [
+                {
+                  "name": "Valtion osuus merimieseläkekassan menoista",
+                  "size": 63300000
+                },
+                {
+                  "name": "Valtion osuus maatalousyrittäjän eläkelaista johtuvista menoista",
+                  "size": 778300000
+                },
+                {
+                  "name": "Valtion osuus yrittäjän eläkelaista johtuvista menoista",
+                  "size": 503500000
+                },
+                {
+                  "name": "Valtion korvaus lapsen hoidon ja opiskelun ajalta kertyvästä eläkkeestä",
+                  "size": 18200000
+                },
+                {
+                  "name": "Valtion osuus maatalousyrittäjien tapaturmavakuutuksen kustannuksista",
+                  "size": 13580000
+                },
+                {
+                  "name": "Valtion osuus kansaneläkelaista ja eräistä muista laeista johtuvista menoista",
+                  "size": 3880800000
+                }
+              ]
+            },
+            {
+              "name": "Veteraanien tukeminen",
+              "children": [
+                {
+                  "name": "Valtion korvaus sodista kärsineiden huoltoon",
+                  "size": 700000
+                },
+                {
+                  "name": "Rintamalisät",
+                  "size": 5700000
+                },
+                {
+                  "name": "Sotilasvammakorvaukset",
+                  "size": 33000000
+                },
+                {
+                  "name": "Valtion korvaus sota- ja sotilasinvalidien kuntoutus- ja hoitolaitosten kustannuksiin",
+                  "size": 17000000
+                },
+                {
+                  "name": "Valtionapu sotainvalidien puolisoiden kuntoutustoimintaan",
+                  "size": 1360000
+                },
+                {
+                  "name": "Rintama-avustus eräille ulkomaalaisille vapaaehtoisille rintamasotilaille",
+                  "size": 13000
+                },
+                {
+                  "name": "Eräät kuntoutustoiminnan menot",
+                  "size": 600000
+                },
+                {
+                  "name": "Rintamaveteraanien kuntoutustoiminnan menot",
+                  "size": 20000000
+                },
+                {
+                  "name": "Valtionapu rintamaveteraanien kuntoutustoimintaan",
+                  "size": 8000
+                },
+                {
+                  "name": "Rintamaveteraanien kotiin vietävät palvelut ",
+                  "size": 80000000
+                }
+              ]
+            },
+            {
+              "name": "Sosiaali- ja terveydenhuollon tukeminen",
+              "children": [
+                {
+                  "name": "Kansallinen lapsistrategia-toiminto",
+                  "size": 840000
+                },
+                {
+                  "name": "Valtion korvaus terveydenhuollon ja sosiaalihuollon valtakunnallisen valmiuden kustannuksiin",
+                  "size": 350000
+                },
+                {
+                  "name": "Sosiaali- ja terveydenhuollon kansallinen kehittäminen ",
+                  "size": 2800000
+                },
+                {
+                  "name": "Valtion rahoitus terveydenhuollon yksiköille yliopistotasoiseen tutkimukseen sekä sosiaalityön yliopistotasoiseen tutkimukseen",
+                  "size": 30000000
+                },
+                {
+                  "name": "Valtion korvaus sosiaali- ja terveydenhuollon yksiköille sosiaali- ja terveydenhuollon henkilöstön erikoistumiskoulutukseen",
+                  "size": 108000000
+                },
+                {
+                  "name": "Valtion korvaus terveydenhuollon toimintayksiköille oikeuspsykiatrisista tutkimuksista, potilassiirroista ja lääketieteellisistä asiantuntijalausunnoista aiheutuviin kustannuksiin",
+                  "size": 15200000
+                },
+                {
+                  "name": "Valtion rahoitus Ylioppilaiden terveydenhoitosäätiön opiskeluterveydenhuoltoon",
+                  "size": 67500000
+                },
+                {
+                  "name": "Valtionavustus sosiaali- ja terveyspalvelujen turvaamiseksi",
+                  "size": 1662000
+                },
+                {
+                  "name": "Valtion korvaus hyvinvointialueille kielteisen turvapaikkapäätöksen saaneiden henkilöiden kiireellisen sosiaalihuollon kustannuksiin",
+                  "size": 2000000
+                },
+                {
+                  "name": "Palvelurakenteen kehittäminen",
+                  "size": 9500000
+                },
+                {
+                  "name": "Valtion rahoitus lääkäri- ja lääkintähelikopteritoiminnan menoihin",
+                  "size": 36635000
+                },
+                {
+                  "name": "Valtion rahoitus turvakotitoiminnan menoihin",
+                  "size": 25150000
+                },
+                {
+                  "name": "Elpymis- ja palautumissuunnitelman rahoitus sosiaali- ja terveydenhuoltoon",
+                  "size": 118000000
+                },
+                {
+                  "name": "Valtionavustus sosiaalialan osaamiskeskusten toimintaan",
+                  "size": 3500000
+                },
+                {
+                  "name": "Valtion korvaus rikosasioiden sovittelun järjestämisen kustannuksiin",
+                  "size": 7100000
+                }
+              ]
+            },
+            {
+              "name": "Terveyden ja toimintakyvyn edistäminen",
+              "children": [
+                {
+                  "name": "Rokotteiden hankinta",
+                  "size": 70940000
+                },
+                {
+                  "name": "Terveysvalvonta",
+                  "size": 460000
+                },
+                {
+                  "name": "Tartuntatautien valvonta",
+                  "size": 460000
+                },
+                {
+                  "name": "Terveyden edistäminen",
+                  "size": 1800000
+                },
+                {
+                  "name": "Valtion korvaus työterveyshuollon erikoislääkärikoulutuksesta aiheutuviin kustannuksiin",
+                  "size": 2900000
+                },
+                {
+                  "name": "Valtionavustus UKK-instituutin toimintaan",
+                  "size": 928000
+                }
+              ]
+            },
+            {
+              "name": "Maatalousyrittäjien ja turkistuottajien lomitustoiminta",
+              "children": [
+                {
+                  "name": "Valtion korvaus maatalousyrittäjien lomituspalvelujen kustannuksiin",
+                  "size": 107200000
+                },
+                {
+                  "name": "Valtion korvaus turkistuottajien lomituspalvelujen kustannuksiin",
+                  "size": 1900000
+                },
+                {
+                  "name": "Valtion korvaus poronhoitajien sijaisavun kustannuksiin",
+                  "size": 450000
+                },
+                {
+                  "name": "Valtion korvaus maatalousyrittäjien ja turkistuottajien lomituspalvelujen hallintomenoihin",
+                  "size": 17140000
+                }
+              ]
+            },
+            {
+              "name": "Avustukset terveyden ja sosiaalisen hyvinvoinnin edistämiseen",
+              "children": [
+                {
+                  "name": "Avustukset yhteisöille ja säätiöille terveyden ja sosiaalisen hyvinvoinnin edistämiseen",
+                  "size": 373600000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "VALTIONVELAN KOROT",
+          "children": [
+            {
+              "name": "Valtionvelan korko",
+              "children": [
+                {
+                  "name": "Valtionvelan korko",
+                  "size": 1513000000
+                }
+              ]
+            },
+            {
+              "name": "Muut menot valtionvelasta",
+              "children": [
+                {
+                  "name": "Palkkiot ja muut menot valtionvelasta",
+                  "size": 17760000
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tulot",
+      "children": [
+        {
+          "name": "VEROT JA VERONLUONTEISET TULOT",
+          "children": [
+            {
+              "name": "Tulon ja varallisuuden perusteella kannettavat verot",
+              "children": [
+                {
+                  "name": "Ansio- ja pääomatuloverot",
+                  "size": 23907000000
+                },
+                {
+                  "name": "Yhteisövero",
+                  "size": 5998000000
+                },
+                {
+                  "name": "Korkotulojen lähdevero",
+                  "size": 80000000
+                },
+                {
+                  "name": "Perintö- ja lahjavero",
+                  "size": 903000000
+                }
+              ]
+            },
+            {
+              "name": "Liikevaihdon perusteella kannettavat verot ja maksut",
+              "children": [
+                {
+                  "name": "Arvonlisävero",
+                  "size": 22244000000
+                },
+                {
+                  "name": "Eräistä vakuutusmaksuista suoritettava vero",
+                  "size": 921000000
+                },
+                {
+                  "name": "Apteekkivero",
+                  "size": 186000000
+                }
+              ]
+            },
+            {
+              "name": "Valmisteverot",
+              "children": [
+                {
+                  "name": "Tupakkavero",
+                  "size": 1215000000
+                },
+                {
+                  "name": "Alkoholijuomavero",
+                  "size": 1518000000
+                },
+                {
+                  "name": "Virvoitusjuomavero",
+                  "size": 213000000
+                },
+                {
+                  "name": "Energiaverot",
+                  "size": 4455000000
+                },
+                {
+                  "name": "Eräiden juomapakkausten valmistevero",
+                  "size": 16000000
+                }
+              ]
+            },
+            {
+              "name": "Muut verot",
+              "children": [
+                {
+                  "name": "Autovero",
+                  "size": 541000000
+                },
+                {
+                  "name": "Varainsiirtovero",
+                  "size": 984000000
+                },
+                {
+                  "name": "Arpajaisvero",
+                  "size": 60000000
+                },
+                {
+                  "name": "Ajoneuvovero",
+                  "size": 1060000000
+                },
+                {
+                  "name": "Jätevero",
+                  "size": 8000000
+                }
+              ]
+            },
+            {
+              "name": "Muut veronluonteiset tulot",
+              "children": [
+                {
+                  "name": "Eräät viestinnän maksut",
+                  "size": 30312000
+                },
+                {
+                  "name": "Eräät liikenteen maksut",
+                  "size": 23438000
+                },
+                {
+                  "name": "Väylämaksut",
+                  "size": 45000000
+                },
+                {
+                  "name": "Muut verotulot",
+                  "size": 8965000
+                },
+                {
+                  "name": "Sähkö- ja maakaasuverkkomaksut ja Perämeren tuulivoima-alueella perittävä tuulivoimamaksu     ",
+                  "size": 5230000
+                },
+                {
+                  "name": "Rahoitusvakausviraston hallintomaksut",
+                  "size": 6135000
+                },
+                {
+                  "name": "Säteilytoimintavero",
+                  "size": 2833000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "KORKOTULOT, OSAKKEIDEN MYYNTITULOT JA VOITON TULOUTUKSET",
+          "children": [
+            {
+              "name": "Korkotulot",
+              "children": [
+                {
+                  "name": "Korot valtion lainoista liikelaitoksille",
+                  "size": 2000000
+                },
+                {
+                  "name": "Korot muista lainoista",
+                  "size": 20994000
+                },
+                {
+                  "name": "Korot talletuksista",
+                  "size": 7100000
+                },
+                {
+                  "name": "Muiden eläkelaitosten puolesta maksettujen eläkemenojen ja valtion muille eläkelaitoksille maksamien ennakoiden korkotulot",
+                  "size": 19194000
+                }
+              ]
+            },
+            {
+              "name": "Osinkotulot ja osakkeiden myyntitulot",
+              "children": [
+                {
+                  "name": "Osinkotulot, pääomanpalautukset ja osakkeiden myyntitulot",
+                  "size": 1597000000
+                }
+              ]
+            },
+            {
+              "name": "Osuus valtion rahalaitosten voitosta",
+              "children": [
+                {
+                  "name": "Osuus Suomen Pankin voitosta",
+                  "size": 100000000
+                }
+              ]
+            },
+            {
+              "name": "Valtion liikelaitosten voiton tuloutukset",
+              "children": [
+                {
+                  "name": "Valtion liikelaitosten voiton tuloutukset",
+                  "size": 154000000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LAINAT",
+          "children": [
+            {
+              "name": "Valtiolle takaisin maksettavat lainat",
+              "children": [
+                {
+                  "name": "Takaisinmaksut valtion lainoista liikelaitoksille",
+                  "size": 11500000
+                },
+                {
+                  "name": "Muiden lainojen lyhennykset",
+                  "size": 138448000
+                }
+              ]
+            },
+            {
+              "name": "Valtion nettolainanotto ja velanhallinta",
+              "children": [
+                {
+                  "name": "Nettolainanotto ja velanhallinta",
+                  "size": 8291725000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SEKALAISET TULOT",
+          "children": [
+            {
+              "name": "Valtioneuvoston kanslia",
+              "children": [
+                {
+                  "name": "Valtioneuvoston kanslian muut tulot",
+                  "size": 50000
+                }
+              ]
+            },
+            {
+              "name": "Ulkoministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "Tiede- ja kulttuuri-instituuttikiinteistöjen vuokratulot",
+                  "size": 1005000
+                },
+                {
+                  "name": "Ulkoministeriön hallinnonalan tulot",
+                  "size": 13479000
+                }
+              ]
+            },
+            {
+              "name": "Oikeusministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "Tuomioistuintulot",
+                  "size": 44860000
+                },
+                {
+                  "name": "Oikeusapumaksutulot",
+                  "size": 3911000
+                },
+                {
+                  "name": "Yleisen edunvalvonnan tulot",
+                  "size": 30144000
+                },
+                {
+                  "name": "Ulosottomaksut",
+                  "size": 82000000
+                },
+                {
+                  "name": "Korot ulosoton säilytettävänä olevista varoista",
+                  "size": 1000
+                },
+                {
+                  "name": "Oikeusministeriön hallinnonalan muut tulot",
+                  "size": 2750000
+                }
+              ]
+            },
+            {
+              "name": "Sisäministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "EU:lta saatavat tulot ",
+                  "size": 96611000
+                },
+                {
+                  "name": "Sisäministeriön hallinnonalan muut tulot",
+                  "size": 2100000
+                }
+              ]
+            },
+            {
+              "name": "Puolustusministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "Tulot irtaimen omaisuuden myynnistä ja rojaltimaksuista",
+                  "size": 18000
+                },
+                {
+                  "name": "Puolustusministeriön hallinnonalan muut tulot",
+                  "size": 6719000
+                }
+              ]
+            },
+            {
+              "name": "Valtiovarainministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "Kuntien osuudet verotuskustannuksista",
+                  "size": 58822000
+                },
+                {
+                  "name": "Kansaneläkelaitoksen osuus verotuskustannuksista",
+                  "size": 23197000
+                },
+                {
+                  "name": "Evankelisluterilaisten seurakuntien osuudet verotuskustannuksista",
+                  "size": 13255000
+                },
+                {
+                  "name": "Valtion tieto- ja viestintätekniikkakeskuksen eräät tulot",
+                  "size": 11540000
+                },
+                {
+                  "name": "Siirto valtion eläkerahastosta",
+                  "size": 2125515000
+                },
+                {
+                  "name": "Muiden eläkelaitosten puolesta maksettujen eläkemenojen hyvitykset",
+                  "size": 324471000
+                },
+                {
+                  "name": "Vakuutusmaksuja vastaavat maksut",
+                  "size": 19670000
+                },
+                {
+                  "name": "Työturvallisuusmaksu",
+                  "size": 980000
+                },
+                {
+                  "name": "Euroopan unionin perinteisten omien varojen kantopalkkiot",
+                  "size": 50000000
+                },
+                {
+                  "name": "Euroopan unionilta saatavat tulot matkamenojen korvaamiseen",
+                  "size": 1000000
+                },
+                {
+                  "name": "Valtiovarainministeriön hallinnonalan muut tulot",
+                  "size": 18500000
+                }
+              ]
+            },
+            {
+              "name": "Opetus- ja kulttuuriministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "Opintotukitoiminnan tulot",
+                  "size": 33300000
+                },
+                {
+                  "name": "Opetus- ja kulttuuriministeriön osuus rahapelitoiminnan tuotoista",
+                  "size": 386250000
+                },
+                {
+                  "name": "Opetus- ja kulttuuriministeriön hallinnonalan muut tulot",
+                  "size": 4000000
+                }
+              ]
+            },
+            {
+              "name": "Maa- ja metsätalousministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "EU:n maataloustukirahastosta saatavat tulot",
+                  "size": 531430000
+                },
+                {
+                  "name": "Maaseudun kehittämiseen saatavat tulot EU:lta",
+                  "size": 340000000
+                },
+                {
+                  "name": "Elinkeinokalatalouden kehittämiseen saatavat tulot EU:lta",
+                  "size": 9000000
+                },
+                {
+                  "name": "EU:lta saatavat muut tulot",
+                  "size": 410000
+                },
+                {
+                  "name": "Maa- ja metsätalousministeriön osuus rahapelitoiminnan tuotosta",
+                  "size": 29000000
+                },
+                {
+                  "name": "Vesioikeudelliset kalatalousmaksut",
+                  "size": 2800000
+                },
+                {
+                  "name": "Tenojoen kalastuslupamaksut",
+                  "size": 50000
+                },
+                {
+                  "name": "Hirvieläinten metsästysmaksut",
+                  "size": 4760000
+                },
+                {
+                  "name": "Kalastonhoitomaksut ",
+                  "size": 10175000
+                },
+                {
+                  "name": "Riistanhoitomaksut",
+                  "size": 13059000
+                },
+                {
+                  "name": "Maa- ja metsätalousministeriön hallinnonalan muut tulot",
+                  "size": 4000000
+                }
+              ]
+            },
+            {
+              "name": "Liikenne- ja viestintäministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "Hallinnonalan virastojen tulot",
+                  "size": 1500000
+                },
+                {
+                  "name": "Liikenne- ja viestintäministeriön hallinnonalan muut tulot",
+                  "size": 850000
+                }
+              ]
+            },
+            {
+              "name": "Työ- ja elinkeinoministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "Turvallisuus- ja kemikaaliviraston tulot",
+                  "size": 3744000
+                },
+                {
+                  "name": "Palkkaturvamaksujen palautukset",
+                  "size": 33230000
+                },
+                {
+                  "name": "EU:n alue- ja rakennepolitiikan ja muista koheesiopolitiikan rahastoista saatavat tulot",
+                  "size": 257000000
+                },
+                {
+                  "name": "Työ- ja elinkeinoministeriön hallinnonalan muut tulot",
+                  "size": 526000000
+                }
+              ]
+            },
+            {
+              "name": "Sosiaali- ja terveysministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "Sosiaali- ja terveysalan lupa- ja valvontaviraston tulot",
+                  "size": 2690000
+                },
+                {
+                  "name": "Terveyden ja hyvinvoinnin laitoksen tulot",
+                  "size": 100000
+                },
+                {
+                  "name": "Sosiaali- ja terveysministeriön osuus rahapelitoiminnan tuotosta",
+                  "size": 361750000
+                },
+                {
+                  "name": "Valtionapujen palautukset",
+                  "size": 163200000
+                },
+                {
+                  "name": "Sosiaali- ja terveysministeriön hallinnonalan muut tulot",
+                  "size": 10100000
+                }
+              ]
+            },
+            {
+              "name": "Ympäristöministeriön hallinnonala",
+              "children": [
+                {
+                  "name": "Korvaukset ympäristövahinkojen torjuntatoimista",
+                  "size": 150000
+                },
+                {
+                  "name": "Siirto Valtion asuntorahastosta",
+                  "size": 400000
+                },
+                {
+                  "name": "Ympäristöministeriön hallinnonalan muut tulot",
+                  "size": 964000
+                }
+              ]
+            },
+            {
+              "name": "Muut sekalaiset tulot",
+              "children": [
+                {
+                  "name": "Sakkotulot ja tulot hallinnollisista maksuseuraamuksista",
+                  "size": 130000000
+                },
+                {
+                  "name": "Verotukseen liittyvät korkotulot",
+                  "size": 79000000
+                },
+                {
+                  "name": "Siirrettyjen määrärahojen peruutukset",
+                  "size": 300000000
+                },
+                {
+                  "name": "Muut sekalaiset tulot",
+                  "size": 7000000
+                },
+                {
+                  "name": "Elpymis- ja palautumistukivälineen tulot",
+                  "size": 391000000
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
