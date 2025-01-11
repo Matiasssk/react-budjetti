@@ -11,21 +11,26 @@ import Etusivu from "./pages/Etusivu";
 import Login from "./pages/Login";
 import Budjetti from "./pages/Budjetti";
 
+// Matomo-seurantakomponentti
 const MatomoTracker = () => {
-  const location = useLocation();
+  const location = useLocation(); // Hakee nykyisen sijainnin
 
   useEffect(() => {
-    // Lisää Matomo-seurantakoodi
-    var _paq = (window._paq = window._paq || []);
-    _paq.push(["setAnonymizeIp", 1]);
-    _paq.push(["disableCookies"]);
+    var _paq = window._paq || [];
+
+    // Matomo-seurantakoodin asetukset
+    _paq.push(["setTrackerUrl", "//tutkibudjettia2025.fi/matomo/matomo.php"]);
+    _paq.push(["setSiteId", "1"]); // Sivuston ID Matomossa
+    _paq.push(["setAnonymizeIp", 1]); // IP-anonymisointi
+    _paq.push(["disableCookies"]); // Poista evästeet käytöstä
+
+    // Seurannan aloitus ja linkkien seuraaminen
     _paq.push(["trackPageView"]);
     _paq.push(["enableLinkTracking"]);
 
+    // Matomo-seurantaskriptin lataaminen
     (function () {
-      var u = "//tutkibudjettia2025.fi/matomo/";
-      _paq.push(["setTrackerUrl", u + "matomo.php"]);
-      _paq.push(["setSiteId", "1"]);
+      var u = "//tutkibudjettia2025.fi/matomo/"; // Matomon URL
       var d = document,
         g = d.createElement("script"),
         s = d.getElementsByTagName("script")[0];
@@ -33,7 +38,10 @@ const MatomoTracker = () => {
       g.src = u + "matomo.js";
       s.parentNode.insertBefore(g, s);
     })();
-  }, [location]); // Tämä varmistaa, että seuranta päivittyy reittimuutoksissa
+
+    // Lähetetään page view, joka sisältää myös URL-osoitteen ja query-parametrit
+    _paq.push(["trackPageView", location.pathname + location.search]);
+  }, [location]); // Seuraa reitityksen muutoksia
 
   return null;
 };
