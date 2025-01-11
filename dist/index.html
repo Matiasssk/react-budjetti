@@ -35,13 +35,20 @@
       _paq.push(['disableCookies']);     // Evästeiden estäminen
       _paq.push(['trackPageView']);      // Lähetä page view
       _paq.push(['enableLinkTracking']); // Ota linkkien seuranta käyttöön
-  
+      
+      // Matomo-skripti ladataan
       (function() {
         var u="//tutkibudjettia2025.fi/matomo/"; // Matomon URL
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        g.async=true; g.src=u+'matomo.js'; 
+        g.onload = function() { 
+          // Varmista, että skripti on ladattu ennen kuin kutsutaan trackPageView
+          _paq.push(['trackPageView']); 
+        };
+        s.parentNode.insertBefore(g,s);
       })();
     </script>
+    
     <script type="module" crossorigin src="/assets/index-1so7iJee.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-hY90ITgR.css">
   </head>
