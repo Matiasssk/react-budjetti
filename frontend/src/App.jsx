@@ -41,8 +41,8 @@ const MatomoTracker = () => {
 const App = () => {
   return (
     <>
-      <MatomoTracker />
       <Router>
+        <MatomoTracker />
         <Header />
 
         <Routes>
