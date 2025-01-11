@@ -20,7 +20,7 @@ const App = () => {
       g = d.createElement("script"),
       s = d.getElementsByTagName("script")[0];
     g.async = true;
-    g.src = "{YOUR_MATOMO_TAG_MANAGER_CONTAINER_URL}"; // Korvaa oikealla URL:llä
+    g.src = "https://tutkibudjettia2025.fi/matomo/"; // Korvaa oikealla URL:llä
     s.parentNode.insertBefore(g, s);
 
     // Matomo-seurannan asetukset
